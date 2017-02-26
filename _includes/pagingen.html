@@ -1,0 +1,26 @@
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h4><a href="{{post.title}}">{{post.title}}</a></h4>
+    <p>
+      <!-- Whitespace added for readability -->
+{% assign m = post.date | date: "%-m" %}
+{{ post.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}gennaio
+  {% when '2' %}febbario
+  {% when '3' %}marzo
+  {% when '4' %}aprile
+  {% when '5' %}maggio
+  {% when '6' %}giugno
+  {% when '7' %}luglio
+  {% when '8' %}agosto
+  {% when '9' %}settembre
+  {% when '10' %}ottobre
+  {% when '11' %}novembre
+  {% when '12' %}dicembre
+{% endcase %}
+{{ post.date | date: "%Y" }} • {{post.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>

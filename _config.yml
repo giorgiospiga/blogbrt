@@ -1,0 +1,49 @@
+# Site settings
+title: Brattea
+description: "Indagini speziate"
+meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+# Author settings
+author:
+  name: Giorgio Spiga
+  twitter: "https://twitter.com/giorgiospiga"
+  email: giorgiospiga@me.com
+
+# Pagination
+paginate: 5
+
+# Sass
+sass:
+  style: :compressed
+
+# Handling Reading
+include:      [".htaccess"]
+exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "Vagrantfile", ".gitignore"]
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      [jekyll-paginate]
+
+# Conversion
+markdown:    kramdown
+excerpt_separator: "\n\n"
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: /blog # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      Europe/Rome
+
+# Services
+google_analytics: 'UA-XXXXXXXX-X'

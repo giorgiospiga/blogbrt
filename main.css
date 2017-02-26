@@ -1,0 +1,31 @@
+html {
+  margin:0;
+  padding:0;
+
+}
+
+.nav-top li {
+  margin: 10px 20px;
+  font-size: 1.75rem;
+}
+
+.nav-top a:hover {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+}
+
+.nav-top a.current {
+  background-color: black;
+  color:white;
+}
+
+.nav-bottom li {
+  margin: 5px 10px;
+  font-size: 0.875rem;
+}
+
+.nav-bottom a.current {
+  background-color: grey;
+  color:white;
+}

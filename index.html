@@ -1,0 +1,13 @@
+---
+layout: default
+type: home
+cover: false
+---
+
+{{ layout.author.name }}, {{ layout.author.email }}
+
+{% include pagingen.html %}
+
+{% if paginator.total_pages > 1 %}
+    {% include pagination.html maxPages=5 %}
+{% endif %}
