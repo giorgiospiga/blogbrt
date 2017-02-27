@@ -4,9 +4,6 @@ type: home
 cover: assets/imgindex/m2.jpg
 ---
 
-{{ layout.author.name }}, {{ layout.author.email }}
-
-{% include pagingen.html %}
 
 {% if paginator.total_pages > 1 %}
    {% include pagingen.html maxPages=5 %}

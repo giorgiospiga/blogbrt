@@ -1,7 +1,7 @@
 <ul>
   {% for post in site.posts %}
   <li>
-    <h4><a href="{{post.title}}">{{post.title}}</a></h4>
+    <h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
     <p>
       <!-- Whitespace added for readability -->
 {% assign m = post.date | date: "%-m" %}
@@ -21,6 +21,7 @@
   {% when '12' %}dicembre
 {% endcase %}
 {{ post.date | date: "%Y" }} • {{post.meta}}</p>
+<span>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | markdownify }}{% endif %}</span>
   </li>
   {% endfor %}
 </ul>
