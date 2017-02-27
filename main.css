@@ -4,7 +4,7 @@ html {
 
 }
 
-header {
+.main-header {
   position: relative;
     display: table;
     width: 100%;

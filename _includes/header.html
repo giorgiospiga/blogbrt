@@ -1,26 +1,21 @@
-<header class="{% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}"">
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}"">
 <div class="container">
   <div class="row">
-    <div class="col-2">
+    <div class="col-0">
 
     </div>
-    <div class="col-8 text-center">
+    <div class="col-12 text-center">
       <hgroup>
         {% if page.type == "home" %}
         <h1>{{ site.title }}</h1>
-        {% elsif page.layout == "page" %}
-        <h2><mark>{{ page.title }}</mark> | <abbr title="Bratteina" >{{ site.title }}</abbr></h2>
         {% else %}
-        <h2>{{ layout.title }} | {{ site.title }}</h2>
+        <h1>{{ page.title }}</h1>
         {% endif %}
       </hgroup>
+      {% include nav.html navclass='nav-top' %}
     </div>
-    <div class="col-2">
-
+    <div class="col-0">
     </div>
   </div>
 </div>
-
-{% include nav.html navclass='nav-top' %}
-
 </header>
