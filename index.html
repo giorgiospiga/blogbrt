@@ -1,7 +1,7 @@
 ---
 layout: default
 type: home
-cover: false
+cover: assets/imgindex/m2.jpg
 ---
 
 {{ layout.author.name }}, {{ layout.author.email }}
@@ -9,5 +9,5 @@ cover: false
 {% include pagingen.html %}
 
 {% if paginator.total_pages > 1 %}
-    {% include pagination.html maxPages=5 %}
+   {% include pagingen.html maxPages=5 %}
 {% endif %}

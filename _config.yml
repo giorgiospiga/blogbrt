@@ -35,15 +35,15 @@ markdown:    kramdown
 excerpt_separator: "\n\n"
 
 # Serving
-detach:  false
+#detach:  false
 port:    4000
 host:    127.0.0.1
 baseurl: /blog # does not include hostname
 
 # Outputting
-permalink:     date
+permalink:     pretty
 paginate_path: /page:num
 timezone:      Europe/Rome
 
 # Services
-google_analytics: 'UA-XXXXXXXX-X'
+#google_analytics: 'UA-XXXXXXXX-X'
