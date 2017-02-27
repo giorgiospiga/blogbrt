@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+        <article class="{% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
+          <header>
+            <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+            <span>{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</span>
+            <span><!-- Whitespace added for readability -->
+      {% assign m = page.date | date: "%-m" %}
+      {{ page.date | date: "%-d" }}
+      {% case m %}
+        {% when '1' %}gennaio
+        {% when '2' %}febbario
+        {% when '3' %}marzo
+        {% when '4' %}aprile
+        {% when '5' %}maggio
+        {% when '6' %}giugno
+        {% when '7' %}luglio
+        {% when '8' %}agosto
+        {% when '9' %}settembre
+        {% when '10' %}ottobre
+        {% when '11' %}novembre
+        {% when '12' %}dicembre
+      {% endcase %}
+      {{ page.date | date: "%Y" }}{% if page.categories %} • {{ page.categories }}{% endif %}</span>
+          </header>
+          <section>
+            {{content}}
+          </section>
+          <footer></footer>
+        </article>
+      </div>
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
+      </div>
+    </div>
+  </div>
+
+</section>

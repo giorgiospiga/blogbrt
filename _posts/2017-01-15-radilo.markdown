@@ -2,7 +2,7 @@
 layout: post
 title:  "Second Post"
 date:   2017-01-15 11:23:13 +0100
-meta: "Suitable for shortform"
+description: "Suitable for shortform"
 categories: prova
 post_author: Giorgio Spiga
 ---

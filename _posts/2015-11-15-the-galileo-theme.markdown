@@ -2,7 +2,6 @@
 layout: post
 title:  "The Galileo Theme"
 date:   2015-11-15 13:05:14 +0100
-meta: "Landing somewhere between a scholarly publication and an adventurers notebook"
 categories: theme
 author: {{ page.author }}
 ---
