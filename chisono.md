@@ -2,7 +2,7 @@
 layout: page
 title: Chi sono
 subtitle: Sull'autore del blog
-cover: ../assets/imgindex/m2.jpg
+cover: ../assets/imgindex/m3.jpg
 ---
 
 Mi chiamo Giorgio Spiga, dal 1987 rivolgo la parola agli sconosciuti. Ascolto musica più che posso e raccolgo gelati.
