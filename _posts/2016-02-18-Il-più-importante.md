@@ -4,6 +4,7 @@ title: Il più importante
 description: Scontro tra FBI e Apple per quello che Edward Snowden definisce "il caso tecnologico del decennio"
 date: 2016-02-18 00:00:14 +0100
 author: {{ site.author }}
+cover: ../assets/imgposts/1000.jpg
 ---
 
 Un giudice federale USA chiede a Apple di rendere accessibili i dati di un iPhone 5c con una decriptazione del terminale per aiutare l'FBI nell'indagine sulla strage di San Bernardino (due persone entrano in un centro per disabili e uccidono 14 persone).
@@ -22,9 +23,9 @@ AGGIORNAMENTO 20160218 01:28
 AGGIORNAMENTO 20160218 16:19
 
 - "Il caso tecnologico del decennio", come lo ha definito Edward Snowden, al Corriere della Sera viene fatto commentare da Beppe Severgnini che dimostra di non conoscere l'argomento e infatti i risultati [sono disastrosi](http://www.corriere.it/opinioni/16_febbraio_18/sicurezza-privacy-apple-prima-clienti-poi-cittadini-scelta-sbagliata-0e5d32a2-d5a8-11e5-bbd0-dbbf7f226638.shtml).
-	  
+
 - In Italia, [in questo momento](http://www.apogeonline.com/webzine/2016/02/17/legiferare-senza-cognizione-di-causa). via [Lucio Bragagnolo](http://macintelligence.org/blog/2016/02/17/il-coraggio-e-il-valore/).
-	  
+
 AGGIORNAMENTO 20160219 22:02
 
 - [U.S. and Apple Dig In for Court Fight Over Encryption  - WSJ](http://www.wsj.com/articles/u-s-and-apple-dig-in-for-court-fight-over-encryption-1455755560);

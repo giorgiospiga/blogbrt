@@ -1,27 +1,40 @@
-<ul>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8">
+      <ul class="blog-list flexbox-container">
   {% for post in site.posts %}
+
   <li>
-    <h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
-    <p>
-      <!-- Whitespace added for readability -->
-{% assign m = post.date | date: "%-m" %}
-{{ post.date | date: "%-d" }}
-{% case m %}
-  {% when '1' %}gennaio
-  {% when '2' %}febbario
-  {% when '3' %}marzo
-  {% when '4' %}aprile
-  {% when '5' %}maggio
-  {% when '6' %}giugno
-  {% when '7' %}luglio
-  {% when '8' %}agosto
-  {% when '9' %}settembre
-  {% when '10' %}ottobre
-  {% when '11' %}novembre
-  {% when '12' %}dicembre
-{% endcase %}
-{{ post.date | date: "%Y" }} • {{post.meta}}</p>
-<span>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | markdownify }}{% endif %}</span>
+
+    <a class="article" href="{{site.baseurl}}{{post.url}}">
+      <h4>{{post.title}}</h4>
+      <span class="date-index">
+        <!-- Whitespace added for readability -->
+        {% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
+        {% case m %}
+        {% when '1' %}gennaio
+        {% when '2' %}febbario
+        {% when '3' %}marzo
+        {% when '4' %}aprile
+        {% when '5' %}maggio
+        {% when '6' %}giugno
+        {% when '7' %}luglio
+        {% when '8' %}agosto
+        {% when '9' %}settembre
+        {% when '10' %}ottobre
+        {% when '11' %}novembre
+        {% when '12' %}dicembre
+        {% endcase %}
+        {{ post.date | date: "%Y" }} • {{post.meta}}
+      </span>
+      <span>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | markdownify }}{% endif %}</span>
+    </a>
+
   </li>
+
   {% endfor %}
 </ul>
+</div>
+</div>
+</div>
