@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section>
+<section class="bg-eff">
   <div class="container">
     <div class="row">
       <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
@@ -10,8 +10,8 @@ layout: default
         <article class="{% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
           <header>
             <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
-            <span>{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</span>
-            <span><!-- Whitespace added for readability -->
+            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</span>
+            <span class="small"><!-- Whitespace added for readability -->
       {% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%-d" }}
       {% case m %}
@@ -28,7 +28,11 @@ layout: default
         {% when '11' %}novembre
         {% when '12' %}dicembre
       {% endcase %}
-      {{ page.date | date: "%Y" }}{% if page.categories %} • {{ page.categories }}{% endif %}</span>
+      {{ page.date | date: "%Y" }}
+      {% for category in page.categories %}
+      <span> • {{ page.categories }}</span>
+{% endfor %}
+    </span>
           </header>
           <section>
             {{content}}
