@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-10 col-md-8">
+    <div class="col-12 col-sm-10 col-md-9 col-lg-8">
       <ul class="blog-list flexbox-container">
   {% for post in site.posts %}
 
@@ -9,12 +9,11 @@
     <a class="article" href="{{site.baseurl}}{{post.url}}">
       <h4>{{post.title}}</h4>
       <span class="date-index">
-        <!-- Whitespace added for readability -->
         {% assign m = post.date | date: "%-m" %}
         {{ post.date | date: "%-d" }}
         {% case m %}
         {% when '1' %}gennaio
-        {% when '2' %}febbario
+        {% when '2' %}febbraio
         {% when '3' %}marzo
         {% when '4' %}aprile
         {% when '5' %}maggio
@@ -26,9 +25,8 @@
         {% when '11' %}novembre
         {% when '12' %}dicembre
         {% endcase %}
-        {{ post.date | date: "%Y" }} • {{post.meta}}
-      </span>
-      <span>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | markdownify }}{% endif %}</span>
+        {{ post.date | date: "%Y" }}</span>
+      <span>{% if post.description %} • {{ post.description }}{% else %} • {{ post.excerpt | strip_html }}{% endif %}</span>
     </a>
 
   </li>
