@@ -2,21 +2,32 @@
 layout: default
 ---
 <section class="bg-eff">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
-      </div>
-      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
-        <article class="{% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
-          <header>
+  <article class=" pt-4 {% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-xs-12">
             <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-7 mb-3">
             <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</span>
-            <span class="small"><!-- Whitespace added for readability -->
+            <br/>
+            <span class="text-uppercase"><!-- Whitespace added for readability -->
       {% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%-d" }}
       {% case m %}
         {% when '1' %}gennaio
-        {% when '2' %}febbario
+        {% when '2' %}febbraio
         {% when '3' %}marzo
         {% when '4' %}aprile
         {% when '5' %}maggio
@@ -31,18 +42,29 @@ layout: default
       {{ page.date | date: "%Y" }}
       {% for category in page.categories %}
       <span> • {{ page.categories }}</span>
-{% endfor %}
+  {% endfor %}
     </span>
-          </header>
-          <section>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-xs-12 col-sm-11 col-md-9 col-lg-7">
+          <section class="text-justify">
             {{content}}
           </section>
-          <footer></footer>
-        </article>
-      </div>
-      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3">
+          <footer>
+
+          </footer>
+        </div>
+        <div class="col">
+        </div>
       </div>
     </div>
-  </div>
-
+  </article>
 </section>
