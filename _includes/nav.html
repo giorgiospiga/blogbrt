@@ -1,11 +1,8 @@
 <nav class="{% if page.cover %}overlay{% endif %}">
   <ul class="nav {{include.navclass}}">
     <li><a href="{{site.url}}{{site.baseurl}}/index" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
-    <li><a href="{{site.url}}{{site.baseurl}}/chisono" class="{% if page.url == '/chisono.html' %}current{% endif %}">About</a></li>
-    <li><a href="{{site.url}}{{site.baseurl}}/ciao" class="{% if page.url == '/ciao.html' %}current{% endif %}">Ciao</a></li>
-    <li><form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form></li>
+    <li><a href="{{site.url}}{{site.baseurl}}/chisono" class="{% if page.url == '/chisono/' %}current{% endif %}">Chi sono</a></li>
+    <!--<li><a href="{{site.url}}{{site.baseurl}}/ciao" class="{% if page.url == '/ciao' %}current{% endif %}">Ciao</a></li>
+    -->
   </ul>
 </nav>
