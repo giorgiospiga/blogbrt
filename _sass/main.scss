@@ -1,24 +1,19 @@
 /*
-	Somato Emozionale
-	somatoemozionale.it
+	giorgiospiga.github.io
 	webdev: Giorgio Spiga
 */
 
 /* BASE - Base styles, variables, mixins, etc. */
 
 @import 'base/_variables.scss';
-@import 'base/_mixins.scss';
-@import 'base/_normalize.scss';
 @import 'base/_base.scss';
 
 /* MODULES - Individual site components */
 
 @import 'modules/_typography.scss';
-@import 'modules/_blocks.scss';
+@import 'modules/_post.scss';
 @import 'modules/_buttons.scss';
-@import 'modules/_sections.scss';
-@import 'modules/_components.scss';
-@import 'modules/_carousel.scss';
+@import 'modules/_postlist.scss';
 
 /* LAYOUTS - Page layout styles */
 
