@@ -11,6 +11,10 @@ author:
 
 # Pagination
 paginate: 5
+prevpage: Precedente
+nextpage: Successiva
+mprevpage: "&laquo;"
+mnextpage: "&raquo;"
 
 # Sass
 sass:
@@ -42,7 +46,7 @@ baseurl:  # does not include hostname
 
 # Outputting
 permalink:     pretty
-paginate_path: /page:num
+paginate_path: /page:num/
 timezone:      Europe/Rome
 
 # Services
