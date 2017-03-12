@@ -9,6 +9,10 @@ author:
   twitter: "https://twitter.com/giorgiospiga"
   email: giorgiospiga@me.com
 
+# Nav settings
+navtop: false
+navbottom: false
+
 # Pagination
 paginate: 5
 prevpage: Precedente
