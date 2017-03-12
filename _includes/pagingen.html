@@ -48,7 +48,7 @@
       <a class="page-link text-muted hidden-sm-up" href="#" tabindex="-1">{{ site.mprevpage }}</a>
     </li>
     {% endif %}
-    <li class="page-item disabled"><a class="page-link text-muted" href="#">Pagina {{ paginator.page }} di {{ paginator.total_pages }}</a></li>
+    <li class="page-item disabled"><a class="page-link text-muted pagdescr" href="#">Pagina {{ paginator.page }} di {{ paginator.total_pages }}</a></li>
     {% if paginator.next_page %}
     <li class="page-item">
       <a class="page-link hidden-xs-down" href="{{ paginator.next_page_path }}">{{ site.nextpage }}</a>

@@ -1,10 +1,14 @@
 /* Pagination */
 
-
+a.page-link.text-muted.pagdescr {
+	background-color: transparent;
+	border: 0;
+}
 
 .pagination li a.page-link {
 	background-color: $accent-color;
 	color: $gray-lightest;
+	border-radius: 100px !important;
 }
 
 .pagination li a.page-link:hover {
