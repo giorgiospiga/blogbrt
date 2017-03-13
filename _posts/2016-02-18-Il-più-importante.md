@@ -3,8 +3,16 @@ layout: post
 title: Il più importante
 description: Scontro tra FBI e Apple per quello che Edward Snowden definisce "il caso tecnologico del decennio"
 date: 2016-02-18 00:00:14 +0100
-author: {{ site.author }}
+author: {{ site.author.name }}
 cover:
+tags:
+- Apple
+- Tim Cook
+- USA
+- Edward Snowden
+- Marco Arment
+- sicurezza
+- iPhone
 ---
 
 Un giudice federale USA chiede a Apple di rendere accessibili i dati di un iPhone 5c con una decriptazione del terminale per aiutare l'FBI nell'indagine sulla strage di San Bernardino (due persone entrano in un centro per disabili e uccidono 14 persone).
