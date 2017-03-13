@@ -1,20 +1,20 @@
-<header class="main-header mb-5 {% if page.cover %}" style="background-image: url({{ page.cover }}); max-width: 100%; height: 300px; "{%else%}no-cover{% endif %}">
+<header class="main-header py-3 {% if page.cover %}" style="background-image: url({{ page.cover }}); max-width: 100%; height: 300px; "{%else%}no-cover{% endif %}">
 <div class="container">
   <div class="row">
     <div class="col">
 
     </div>
     <div class="col-12 text-center">
-      <hgroup>
+      {% if site.navtop == true %}
+        {% include nav.html navclass='nav-top' navclassb='form-top' %}
+      {% endif %}
+      <hgroup class="my-5">
         {% if page.type == "home" %}
         <h1>{{ site.title }}</h1>
         {% else %}
         <h1>{{ page.title }}</h1>
         {% endif %}
       </hgroup>
-      {% if site.navtop == true %}
-        {% include nav.html navclass='nav-top' navclassb='form-top' %}
-      {% endif %}
     </div>
     <div class="col">
     </div>

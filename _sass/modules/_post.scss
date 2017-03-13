@@ -25,4 +25,22 @@ article {
 		-ms-hyphens: auto;
 		hyphens: auto;
 	}
+
+  #postcontent {
+    a {
+  		color:$accent-color;
+  		border-bottom: 1px dashed;
+  	}
+  	a:hover {
+  		color:$accent-color-fdl;
+  		border-bottom: 1px solid;
+  		text-decoration:none;
+  	}
+  }
+}
+
+.lead {
+	font-size: $base-font-size*1.1375;
+	color: $gray;
+	text-shadow: 1px 0px 1px rgba(215, 215, 215, 1);
 }

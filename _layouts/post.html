@@ -6,21 +6,23 @@ layout: default
     <header>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-xs-12">
           </div>
           <div class="col-xs-12">
+<!--
             <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+-->
           </div>
-          <div class="col">
+          <div class="col-xs-12">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2 mb-2">
           </div>
-          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-7 mb-3">
-            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</span>
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 5 | append: '...' }}{% endif %}</span>
             <br/>
             <span class="text-uppercase"><!-- Whitespace added for readability -->
       {% assign m = page.date | date: "%-m" %}
@@ -45,24 +47,27 @@ layout: default
   {% endfor %}
     </span>
           </div>
-          <div class="col">
+          <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
           </div>
         </div>
       </div>
     </header>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
         </div>
-        <div class="col-xs-12 col-sm-11 col-md-9 col-lg-7">
-          <section class="text-justify">
-            {{content}}
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+          <section id="postcontent" class="text-justify">
+            <figure class="figure">
+              <img src="{{ post.coverimg.source }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+            </figure>
+            {{content | smartify }}
           </section>
           <footer>
 
           </footer>
         </div>
-        <div class="col">
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
         </div>
       </div>
     </div>
