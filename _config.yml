@@ -1,7 +1,7 @@
 # Site settings
 title: Brattea
 description: "Indagini speziate"
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+url: https://giorgiospiga.github.io
 
 # Author settings
 author:
@@ -10,7 +10,7 @@ author:
   email: giorgiospiga@me.com
 
 # Nav settings
-navtop: false
+navtop: true
 navbottom: false
 
 # Pagination
@@ -26,7 +26,7 @@ sass:
 
 # Handling Reading
 include:      [".htaccess"]
-exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "Vagrantfile", ".gitignore"]
+exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "Gemfile", "Gemfile.lock", "vendor/gems/", "vendor/ruby/", "LICENSE", "README.md", "CNAME", "Vagrantfile", ".gitignore", ".DS_Store"]
 
 # Filtering Content
 show_drafts: null
@@ -36,7 +36,9 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-feed
 
 # Conversion
 markdown:    kramdown
