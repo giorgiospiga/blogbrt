@@ -1,12 +1,12 @@
-<nav class="navbar {% if page.cover %} overlay{% endif %}">
-  <ul class="nav justify-content-between {{include.navclass}}">
-    <li class="nav-item{% if page.url == '/' %} active{% endif %}">
-      <a href="{{site.url}}{{site.baseurl}}/index" class="nav-link{% if page.url == '/' %} current{% endif %}">Home<span class="sr-only"> (pagina iniziale)</span>{% if page.url == '/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
-    </li><!--
-    <li class="nav-item{% if page.url == '/chisono' %} active{% endif %}">
-      <a href="{{site.url}}{{site.baseurl}}/chisono" class="nav-link{% if page.url == '/chisono/' %} current{% endif %}">Chi sono{% if page.url == '/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
-    </li>-->
-    <li class="nav-item">
+<nav class="{% if page.cover %}overlay{% endif %}">
+  <ul class="nav flex-sm-column {{include.navclass}}">
+    <li class="nav-item mb-1 mr-3{% if page.url == '/' %} active{% endif %}">
+      <a href="{{site.url}}{{site.baseurl}}" class="nav-link{% if page.url == '/' %} current{% endif %}">Inizio<span class="sr-only"> (pagina iniziale)</span>{% if page.url == '/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
+    </li>
+    <li class="nav-item mb-1 mr-3{% if page.url == '/chisono' %} active{% endif %}">
+      <a href="{{site.url}}{{site.baseurl}}/info" class="nav-link{% if page.url == '/info/' %} current{% endif %}">Info{% if page.url == '/info/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
+    </li>
+    <li class="nav-item mb-1 mr-3">
       <a href="{{site.baseurl}}/feed.xml" class="nav-link">Iscriviti</a>
     </li>
   </ul>

@@ -4,8 +4,11 @@
     display: table;
     width: 100%;
     min-height: 20%;
-    text-align: center;
     background: #ffeeee no-repeat center center;
     background-size: cover;
     overflow: hidden;
+
+    .container {
+      width: 100%;
+    }
 }

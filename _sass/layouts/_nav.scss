@@ -2,20 +2,18 @@
 
 .nav-top {
 	li {
-	  font-size: 1.275rem;
+	  font-size:$base-font-size*1.05;
 
 		a {
 			padding: 3px;
 			color: $gray-dark;
 			text-shadow: 1px 0px 326px rgba(225, 225, 225, 0.995);
-			border: 1px solid $gray-dark;
 			border-radius: 5%;
 		}
 
 		a:hover {
 		  color: $gray-dark;
-			text-decoration: none;
-			background-color: $gray-lightest;
+			text-decoration: underline;
 		}
 	}
 }
