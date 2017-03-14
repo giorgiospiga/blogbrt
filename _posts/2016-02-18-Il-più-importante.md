@@ -3,8 +3,12 @@ layout: post
 title: Il più importante
 description: Scontro tra FBI e Apple per quello che Edward Snowden definisce "il caso tecnologico del decennio"
 date: 2016-02-18 00:00:14 +0100
-author: {{ site.author.name }}
-cover:
+author: "gio"
+coverimg:
+  source:
+  rsource:
+  dsource:
+  alt:
 tags:
 - Apple
 - Tim Cook
@@ -35,14 +39,14 @@ AGGIORNAMENTO 20160218 16:19
 
 AGGIORNAMENTO 20160219 22:02
 
-- [U.S. and Apple Dig In for Court Fight Over Encryption  - WSJ](http://www.wsj.com/articles/u-s-and-apple-dig-in-for-court-fight-over-encryption-1455755560);
+- U.S. and Apple Dig In for Court Fight Over Encryption  - [WSJ](http://www.wsj.com/articles/u-s-and-apple-dig-in-for-court-fight-over-encryption-1455755560);
 - Lucio Bragagnolo [su Severgnini & co.](http://macintelligence.org/blog/2016/02/19/il-corriere-degli-intrusori/);
 - Obama «[receives the briefing via iPad](http://icontherecord.tumblr.com/post/139487519468/does-the-president-receive-a-daily-intelligence)»;
-- [Reform Government Surveillance Statement Regarding Encryption and Security](http://reformgs.tumblr.com/post/139513553507/reform-government-surveillance-statement);
+- Reform Government Surveillance [Statement](http://reformgs.tumblr.com/post/139513553507/reform-government-surveillance-statement) Regarding Encryption and Security;
 - Da un articolo del NYTimes [sparisce](https://twitter.com/readDanwrite/status/700395944970420224) un'intera sezione riguardante la Cina e i vantaggi che questa e altri stati otterrebbero con l'implementazione di una backdoor "a regime". Dicono «[normale amministrazione](https://twitter.com/readDanwrite/status/700532251923091456).» Così [non sembrerebbe](https://twitter.com/readDanwrite/status/700533461334024192);
 - C'è anche [il supporto](https://www.eff.org/deeplinks/2016/02/eff-support-apple-encryption-battle) dell'Electronic Frontier Foundation;
-- [Upgrade Your iPhone Passcode to Defeat the FBI’s Backdoor Strategy - The Intercept](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/)
-- [DoJ ora esige la collaborazione di Apple sull'iPhone del terrorista - @SetteBIT](https://twitter.com/setteBIT/status/700774852375027712), [DoJ files motion to compel Apple to comply with FBI order - CNBC](http://www.cnbc.com/2016/02/19/doj-files-motion-to-compel-apple-to-comply-with-fbi-order.html);
+- [Upgrade Your iPhone Passcode](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) to Defeat the FBI’s Backdoor Strategy - The Intercept
+- DoJ ora [esige](https://twitter.com/setteBIT/status/700774852375027712) la collaborazione di Apple sull'iPhone del terrorista - @SetteBIT, DoJ files motion to compel Apple to comply with FBI order - [CNBC](http://www.cnbc.com/2016/02/19/doj-files-motion-to-compel-apple-to-comply-with-fbi-order.html);
 - [Più distopia che privacy](http://www.apogeonline.com/webzine/2016/02/19/piu-distopia-che-privacy).
 
 AGGIORNAMENTO 20160220 22:17

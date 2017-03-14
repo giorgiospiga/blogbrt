@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Gli occhiali da sole sono adatti a colui che doma
+title: 
 description:
 date: 2015-05-16T20:50:10+02:00
 author: {{ site.author.name }}
-cover:
+coverimg:
+  source:
+  rsource:
+  dsource: "2015-05-16-occhiali.jpg"
+  alt: occhiali da sole
 tags:
 - Juventus
 ---

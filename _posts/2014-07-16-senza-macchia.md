@@ -4,7 +4,9 @@ title: Senza macchia
 date: 2014-07-16T16:12:00+02:00
 author: {{ site.author.name }}
 coverimg:
-  source: "{{ post.baseurl }}{{ post.baseurl }}/assets/imgposts/sopranos_silvio_clean.jpg"
+  source:
+  rsource:
+  dsource: "2014-07-16-sopranos_silvio_clean.jpg"
   alt: senza macchia
 tags:
 - RAI

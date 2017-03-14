@@ -57,3 +57,8 @@ timezone:      Europe/Rome
 
 # Services
 #google_analytics: 'UA-XXXXXXXX-X'
+
+# Post images source
+imgsource: /assets/imgposts/ # Local source
+#imgrsource # Remote, external source
+imgdsource: https://dl.dropboxusercontent.com/u/173133/site/postimgs/ # Dropbox source like https://dl.dropboxusercontent.com/u/USER_ID/SOME_FOLDER/

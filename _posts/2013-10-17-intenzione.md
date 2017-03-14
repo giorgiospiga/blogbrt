@@ -5,9 +5,10 @@ date: '2013-10-17T02:07:00+02:00'
 author: {{ site.author.name }}
 coverimg:
   source:
+  rsource:
+  dsource:
   alt:
 tags: []
-tumblr_url: http://filodilana.tumblr.com/post/64250987074
 ---
 Quante volte ci mandiamo mail da soli per ricordarci un link, qualcosa da fare, o segnamo appunti in luoghi improbabili?  Io sono un vero mostro in questo senso.
 
