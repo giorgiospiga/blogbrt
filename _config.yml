@@ -42,7 +42,6 @@ gems:
 
 # Conversion
 markdown:    kramdown
-excerpt_separator: "\n\n"
 
 # Serving
 #detach:  false
