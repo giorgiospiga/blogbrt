@@ -1,4 +1,5 @@
 <footer>
-  {% include nav.html navclass='nav-bottom' %}
-
+  {% if site.navbottom == true %}
+    {% include nav.html navclass='nav-bottom' %}
+  {% endif %}
 </footer>

@@ -14,19 +14,4 @@ h2 {
 
 p {
 	color: $base-font-color;
-	a {
-		color:$accent-color;
-		border-bottom: 1px dashed;
-	}
-	a:hover {
-		color:$accent-color-fdl;
-		border-bottom: 1px solid;
-		text-decoration:none;
-	}
-}
-
-.lead {
-	font-size: $base-font-size*1.5;
-	color: $color-secondary;
-	text-shadow: 1px 0px 2px rgba(215, 215, 215, 1);
 }

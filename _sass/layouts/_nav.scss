@@ -1,35 +1,26 @@
 /* Nav */
 
-.nav-top li {
-	float: none !important;
-	padding: 2px;
-  font-size: 1.25rem;
+.nav-top {
+	li {
+	  font-size:$base-font-size*1.05;
 
-	a {
-		padding: 1px;
-		color: $gray;
-		text-shadow: 1px 0px 326px rgba(225, 225, 225, 0.995);
+		a {
+			padding: 3px;
+			color: $gray-dark;
+			text-shadow: 1px 0px 326px rgba(225, 225, 225, 0.995);
+			border-radius: 5%;
+		}
 
-	}
-
-	a:hover {
-	  color: $gray-dark;
-		border-bottom: 1px solid;
-		border-color: $gray-dark;
-		text-decoration: none;
-	}
-
-
-	a.current {
-	  color: $gray;
-		border-bottom: 0;
-	}
-	.current:hover {
-		border-bottom: 1px solid;
+		a:hover {
+		  color: $gray-dark;
+			text-decoration: underline;
+		}
 	}
 }
 
 .nav-bottom {
+
+	background-color: $accent-color;
 	text-align: center;
 
 	li {
@@ -39,4 +30,8 @@
 	a.current {
 		color: $gray;
 	}
+}
+
+.form-top {
+	display: none;
 }

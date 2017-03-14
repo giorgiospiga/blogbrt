@@ -6,21 +6,23 @@ layout: default
     <header>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-xs-12">
           </div>
           <div class="col-xs-12">
+<!--
             <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+-->
           </div>
-          <div class="col">
+          <div class="col-xs-12">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col mb-2">
           </div>
-          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-7 mb-3">
-            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</span>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 5 | append: '...' }}{% endif %}</span>
             <br/>
             <span class="text-uppercase"><!-- Whitespace added for readability -->
       {% assign m = page.date | date: "%-m" %}
@@ -43,7 +45,12 @@ layout: default
       {% for category in page.categories %}
       <span> • {{ page.categories }}</span>
   {% endfor %}
-    </span>
+      </span>
+      <span>• di
+        <a href="https://twitter.com/{{ site.data.authors[page.author].twitter }}">
+          {{ site.data.authors[page.author].name }}
+        </a>
+      </span>
           </div>
           <div class="col">
           </div>
@@ -54,9 +61,27 @@ layout: default
       <div class="row">
         <div class="col">
         </div>
-        <div class="col-xs-12 col-sm-11 col-md-9 col-lg-7">
-          <section class="text-justify">
-            {{content}}
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <section id="postcontent" class="text-justify">
+            {% if page.coverimg.source != null %}
+            <figure class="figure">
+              <img src="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.source }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+            </figure>
+            {% elsif page.coverimg.rsource != null %}
+            <figure class="figure">
+              <img src="{{ page.coverimg.rsource }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+            </figure>
+            {% elsif page.coverimg.dsource != null %}
+            <figure class="figure">
+              <img src="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}" class="figure-img img-fluid rounded" alt="{{ page.coverimg.alt }}">
+            </figure>
+            {% else %}
+            <div class="mb-4">
+
+            </div>
+            {% endif %}
+
+            {{content | smartify }}
           </section>
           <footer>
 

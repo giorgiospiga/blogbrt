@@ -1,0 +1,11 @@
+---
+layout: post
+title: TITOLOPOST
+date: 2014-07-16T16:12:00+02:00
+author: {{ site.author }}
+coverimg:
+  source: "{{ post.baseurl }}{{ post.baseurl }}/assets/imgposts/NOMEIMG.jpg"
+  alt: \ALTIMG
+tags:
+- TAG
+---

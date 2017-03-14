@@ -1,7 +1,7 @@
 # Site settings
 title: Brattea
 description: "Indagini speziate"
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+url: https://giorgiospiga.github.io
 
 # Author settings
 author:
@@ -9,8 +9,16 @@ author:
   twitter: "https://twitter.com/giorgiospiga"
   email: giorgiospiga@me.com
 
+# Nav settings
+navtop: true
+navbottom: false
+
 # Pagination
 paginate: 5
+prevpage: Precedente
+nextpage: Successiva
+mprevpage: "&laquo;"
+mnextpage: "&raquo;"
 
 # Sass
 sass:
@@ -18,7 +26,7 @@ sass:
 
 # Handling Reading
 include:      [".htaccess"]
-exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "Vagrantfile", ".gitignore"]
+exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "Gemfile", "Gemfile.lock", "vendor/gems/", "vendor/ruby/", "LICENSE", "README.md", "CNAME", "Vagrantfile", ".gitignore", ".DS_Store"]
 
 # Filtering Content
 show_drafts: null
@@ -28,11 +36,12 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-feed
 
 # Conversion
 markdown:    kramdown
-excerpt_separator: "\n\n"
 
 # Serving
 #detach:  false
@@ -42,8 +51,13 @@ baseurl:  # does not include hostname
 
 # Outputting
 permalink:     pretty
-paginate_path: /page:num
+paginate_path: /page:num/
 timezone:      Europe/Rome
 
 # Services
 #google_analytics: 'UA-XXXXXXXX-X'
+
+# Post images source
+imgsource: /assets/imgposts/ # Local source
+#imgrsource # Remote, external source
+imgdsource: https://dl.dropboxusercontent.com/u/173133/site/postimgs/ # Dropbox source like https://dl.dropboxusercontent.com/u/USER_ID/SOME_FOLDER/

@@ -1,8 +1,13 @@
 <nav class="{% if page.cover %}overlay{% endif %}">
-  <ul class="nav {{include.navclass}}">
-    <li><a href="{{site.url}}{{site.baseurl}}/index" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
-    <li><a href="{{site.url}}{{site.baseurl}}/chisono" class="{% if page.url == '/chisono/' %}current{% endif %}">Chi sono</a></li>
-    <!--<li><a href="{{site.url}}{{site.baseurl}}/ciao" class="{% if page.url == '/ciao' %}current{% endif %}">Ciao</a></li>
-    -->
+  <ul class="nav flex-sm-column {{include.navclass}}">
+    <li class="nav-item mb-1 mr-3{% if page.url == '/' %} active{% endif %}">
+      <a href="{{site.url}}{{site.baseurl}}" class="nav-link{% if page.url == '/' %} current{% endif %}">Inizio<span class="sr-only"> (pagina iniziale)</span>{% if page.url == '/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
+    </li>
+    <li class="nav-item mb-1 mr-3{% if page.url == '/chisono' %} active{% endif %}">
+      <a href="{{site.url}}{{site.baseurl}}/info" class="nav-link{% if page.url == '/info/' %} current{% endif %}">Info{% if page.url == '/info/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
+    </li>
+    <li class="nav-item mb-1 mr-3">
+      <a href="{{site.baseurl}}/feed.xml" class="nav-link">Iscriviti</a>
+    </li>
   </ul>
 </nav>
