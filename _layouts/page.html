@@ -4,10 +4,20 @@ layout: default
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-xs-8">
+      <div class="col">
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+        <!--
         <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+        -->
         <h2>{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}</h2>
+
         {{content}}
+
+      </div>
+      <div class="col">
+
       </div>
     </div>
   </div>

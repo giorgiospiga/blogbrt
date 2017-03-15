@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 
+title:
 description:
 date: 2015-05-16T20:50:10+02:00
-author: {{ site.author.name }}
+author: gio
 coverimg:
   source:
   rsource:

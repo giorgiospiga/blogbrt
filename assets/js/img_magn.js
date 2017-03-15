@@ -2,6 +2,6 @@ $(function ()
 {
         $('img').on('click', function ()
         {
-                $(this).width(1000);
+                $(this).width(100%);
         });
 });

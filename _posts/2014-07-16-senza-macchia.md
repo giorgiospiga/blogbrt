@@ -2,7 +2,7 @@
 layout: post
 title: Senza macchia
 date: 2014-07-16T16:12:00+02:00
-author: {{ site.author.name }}
+author: gio
 coverimg:
   source:
   rsource:

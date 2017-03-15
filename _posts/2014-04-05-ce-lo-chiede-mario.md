@@ -2,7 +2,7 @@
 layout: post
 title: Ce lo chiede Mario
 date: 2014-04-05T09:00:00+02:00
-author: {{ site.author.name }}
+author: gio
 coverimg:
   source:
   rsource:

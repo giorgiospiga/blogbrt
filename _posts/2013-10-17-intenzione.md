@@ -2,7 +2,7 @@
 layout: post
 title: Intenzione
 date: '2013-10-17T02:07:00+02:00'
-author: {{ site.author.name }}
+author: gio
 coverimg:
   source:
   rsource:
