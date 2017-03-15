@@ -3,114 +3,89 @@ layout: default
 ---
 <section class="bg-eff">
   <article class=" pt-4 {% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-          </div>
-          <div class="col-xs-12">
-<!--
-            <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
--->
-          </div>
-          <div class="col-xs-12">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col hidden-md-up mb-2">
-          </div>
-          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8">
-            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 5 | append: '...' }}{% endif %}</span>
-            <br/>
-            <span class="text-uppercase"><!-- Whitespace added for readability -->
-      {% assign m = page.date | date: "%-m" %}
-      {{ page.date | date: "%-d" }}
-      {% case m %}
-        {% when '1' %}gennaio
-        {% when '2' %}febbraio
-        {% when '3' %}marzo
-        {% when '4' %}aprile
-        {% when '5' %}maggio
-        {% when '6' %}giugno
-        {% when '7' %}luglio
-        {% when '8' %}agosto
-        {% when '9' %}settembre
-        {% when '10' %}ottobre
-        {% when '11' %}novembre
-        {% when '12' %}dicembre
-      {% endcase %}
-      {{ page.date | date: "%Y" }}
-      {% for category in page.categories %}
-      <span> • {{ page.categories }}</span>
-  {% endfor %}
-      </span>
-      <span>• di
-        <a href="https://twitter.com/{{ site.data.authors[page.author].twitter }}">
-          {{ site.data.authors[page.author].name }}
-        </a>
-      </span>
-          </div>
-          <div class="col">
-          </div>
-        </div>
-      </div>
-    </header>
     <div class="container">
-      <div class="row">
-        <div class="col hidden-md-up">
+      <div class="row justify-content-xs-center justify-content-sm-center">
 
-        </div>
+        <div class="col-xs-12 col-sm-10 col-md-4 col-md-4">
 
-        <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8">
-          <section id="post-imgcover">
-            {% if page.coverimg.source != null %}
-            <figure class="figure">
-              <a data-fancybox="gallery" href="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.source }}">
-                <img src="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.source }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
-              </a>
-            </figure>
-            {% elsif page.coverimg.rsource != null %}
-            <figure class="figure">
-              <a data-fancybox="gallery" href="{{ page.coverimg.rsource }}">
-                <img src="{{ page.coverimg.rsource }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
-              </a>
-            </figure>
-            {% elsif page.coverimg.dsource != null %}
-            <figure class="figure">
-              <a data-fancybox="gallery" href="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}">
-              <img src="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}" class="figure-img img-fluid rounded" alt="{{ page.coverimg.alt }}">
-              </a>
-            </figure>
-            {% else %}
-            <div class="mb-4">
+          <div class="col-xs-12">
+            <header class="mx-1">
+              <!--
+              <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+              -->
+              <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 5 | append: '...' }}{% endif %}</span>
+              <br/>
+              <span class="text-uppercase"><!-- Whitespace added for readability -->
+                {% assign m = page.date | date: "%-m" %}
+                {{ page.date | date: "%-d" }}
+                {% case m %}
+                  {% when '1' %}gennaio
+                  {% when '2' %}febbraio
+                  {% when '3' %}marzo
+                  {% when '4' %}aprile
+                  {% when '5' %}maggio
+                  {% when '6' %}giugno
+                  {% when '7' %}luglio
+                  {% when '8' %}agosto
+                  {% when '9' %}settembre
+                  {% when '10' %}ottobre
+                  {% when '11' %}novembre
+                  {% when '12' %}dicembre
+                {% endcase %}
+                {{ page.date | date: "%Y" }}</span>
+                {% for category in page.categories %}
+              <span> • {{ page.categories }}</span>
+              {% endfor %}
+              <span>• di
+                <a href="https://twitter.com/{{ site.data.authors[page.author].twitter }}">
+                  {{ site.data.authors[page.author].name }}
+                </a>
+              </span>
+            </header>
+          </div>
+          <div class="col-xs-12">
+            <div class="mx-1">
+              <section id="post-imgcover">
+                {% if page.coverimg.source != null %}
+                <figure class="figure">
+                  <a data-fancybox="gallery" href="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.source }}">
+                    <img src="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.source }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+                  </a>
+                </figure>
+                {% elsif page.coverimg.rsource != null %}
+                <figure class="figure">
+                  <a data-fancybox="gallery" href="{{ page.coverimg.rsource }}">
+                    <img src="{{ page.coverimg.rsource }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+                  </a>
+                </figure>
+                {% elsif page.coverimg.dsource != null %}
+                <figure class="figure">
+                  <a data-fancybox="gallery" href="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}">
+                  <img src="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}" class="figure-img img-fluid rounded" alt="{{ page.coverimg.alt }}">
+                  </a>
+                </figure>
+                {% else %}
+                <div class="mb-4">
 
+                </div>
+                {% endif %}
+              </section>
             </div>
-            {% endif %}
-          </section>
+          </div>
         </div>
 
-        <div class="col">
+<!--
+        <div class="col-xs-12 col-sm-12 col-md-1 col-md-1">
 
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col hidden-md-up">
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8">
+-->
+        <div class="col-xs-12 col-sm-10 col-md-7 col-lg-7 mt-2">
           <section id="postcontent" class="text-justify">
             {{content | smartify }}
           </section>
           <footer>
 
           </footer>
-        </div>
-
-        <div class="col">
-
         </div>
 
       </div>
