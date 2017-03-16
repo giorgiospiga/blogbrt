@@ -1,10 +1,11 @@
 ---
 layout: default
 type: home
-cover:
 ---
 
 
 {% if paginator.total_pages > 1 %}
    {% include pagingen.html maxPages=5 %}
+{% else %}
+  {% include pagingen.html %}
 {% endif %}
