@@ -1,0 +1,28 @@
+<!-- Pagination links -->
+<nav class="my-4" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link hidden-xs" href="{{ paginator.previous_page_path }}{{ paginator.next_page_path }}" tabindex="-1">{{ site.prevpage }}</a>
+      <a class="page-link hidden-sm-up" href="{{ paginator.previous_page_path }}" tabindex="-1">{{ site.mprevpage }}</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+      <a class="page-link text-muted hidden-xs-down" href="#" tabindex="-1">{{ site.prevpage }}</a>
+      <a class="page-link text-muted hidden-sm-up" href="#" tabindex="-1">{{ site.mprevpage }}</a>
+    </li>
+    {% endif %}
+    <li class="page-item disabled"><a class="page-link text-muted pagdescr" href="#">Pagina {{ paginator.page }} di {{ paginator.total_pages }}</a></li>
+    {% if paginator.next_page %}
+    <li class="page-item">
+      <a class="page-link hidden-xs-down" href="{{ paginator.next_page_path }}">{{ site.nextpage }}</a>
+      <a class="page-link hidden-sm-up" href="{{ paginator.next_page_path }}">{{ site.mnextpage }}</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+      <a class="page-link text-muted hidden-xs" href="{{ paginator.next_page_path }}">{{ site.nextpage }}</a>
+      <a class="page-link text-muted hidden-sm-up" href="{{ paginator.next_page_path }}">{{ site.mnextpage }}</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
