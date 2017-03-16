@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-10 col-md-9 col-lg-8">
-      <ul class="blog-list flexbox-container my-4">
+    <div class="col-12 col-sm-10 col-md-9 col-lg-8 py-4">
+      <ul class="blog-list flexbox-container">
   {% for post in paginator.posts %}
 
   <li>
 
     <a class="article" href="{{site.baseurl}}{{post.url}}">
-      <h4>{{post.title | capitalize }}</h4>
+      <h4>{{ post.title }}</h4>
       <span class="date-index">
         {% assign m = post.date | date: "%-m" %}
         {{ post.date | date: "%-d" }}

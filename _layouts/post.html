@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<section class="bg-eff">
-  <article class=" pt-4 {% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
+<section class="bg-eff pb-5">
+  <article class="pt-4 {% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
     <div class="container">
       <div class="row justify-content-xs-center justify-content-sm-center">
 
@@ -13,7 +13,7 @@ layout: default
               <!--
               <h1><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
               -->
-              <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 5 | append: '...' }}{% endif %}</span>
+              <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 10 | append: '»' | prepend: '«' }}{% endif %}</span>
               <br/>
               <span class="text-uppercase"><!-- Whitespace added for readability -->
                 {% assign m = page.date | date: "%-m" %}
