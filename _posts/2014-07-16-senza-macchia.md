@@ -5,6 +5,7 @@ date: 2014-07-16T16:12:00+02:00
 author: gio
 coverimg:
   source: 2014-07-16-sopranos_silvio_clean.jpg
+  sourcet: 2014-07-16-sopranos_silvio_clean_t.jpg
   rsource:
   dsource: "2014-07-16-sopranos_silvio_clean.jpg"
   alt: senza macchia

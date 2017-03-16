@@ -5,6 +5,7 @@ date: 2014-04-05T09:00:00+02:00
 author: gio
 coverimg:
   source: 2014-04-05-mario_pd.png
+  sourcet: 2014-04-05-mario_pd_t.png
   rsource:
   dsource: 2014-04-05-mario_pd.png
   alt: "ce lo chiede mario"
