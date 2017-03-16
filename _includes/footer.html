@@ -1,18 +1,23 @@
 <footer class="main-footer">
   <div class="container ">
-    <div class="raw">
+    <div class="row align-items-center">
+
       <div class="col">
         {% if site.navbottom == true %}
           {% include nav.html navclass='nav-bottom' %}
         {% endif %}
       </div>
+
       <div class="col">
-        Copyright 2017
-        {% if site.time | date:"%Y" == 2017 %}
-        {% else %}
-        - ciao{{ site.time | date:"%Y" }}
-        {% endif %}
+        <span>
+          © Copyright Giorgio Spiga 2017
+          {% if site.time | date:"%Y" == 2017 %}
+          {% else %}
+          - ciao{{ site.time | date:"%Y" }}
+          {% endif %}
+        </span>
       </div>
+
     </div>
   </div>
 </footer>

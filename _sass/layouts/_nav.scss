@@ -20,14 +20,12 @@
 
 .nav-bottom {
 
-	background-color: $accent-color;
-	text-align: center;
-
 	li {
-	  font-size: 0.875rem;
+		float: left;
+	  font-size: 0.8875rem;
 	}
 
-	a.current {
+	a {
 		color: $gray;
 	}
 }
