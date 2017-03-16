@@ -5,7 +5,7 @@ description:
 date: 2015-05-16T20:50:10+02:00
 author: gio
 coverimg:
-  source:
+  source: "2015-05-16-occhiali.jpg"
   rsource:
   dsource: "2015-05-16-occhiali.jpg"
   alt: occhiali da sole

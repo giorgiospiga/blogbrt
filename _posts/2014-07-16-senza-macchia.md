@@ -4,7 +4,7 @@ title: Senza macchia
 date: 2014-07-16T16:12:00+02:00
 author: gio
 coverimg:
-  source:
+  source: 2014-07-16-sopranos_silvio_clean.jpg
   rsource:
   dsource: "2014-07-16-sopranos_silvio_clean.jpg"
   alt: senza macchia
