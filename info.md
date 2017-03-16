@@ -2,7 +2,6 @@
 layout: page
 title: Info
 subtitle: Chi sono
-cover:
 ---
 
 Mi chiamo Giorgio Spiga, dal 1987 rivolgo la parola agli sconosciuti. Ascolto musica più che posso e raccolgo gelati.
