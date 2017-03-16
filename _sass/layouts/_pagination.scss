@@ -6,9 +6,17 @@ a.page-link.text-muted.pagdescr {
 }
 
 .pagination li a.page-link {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: $base-font-size*1.12;
 	background-color: $accent-color;
 	color: $gray-lightest;
 	border-radius: 100px !important;
+}
+
+.pagination li a.page-link span {
+	padding: 0 2px;
+	font-size: $base-font-size*1.5;
 }
 
 .pagination li a.page-link:hover {
