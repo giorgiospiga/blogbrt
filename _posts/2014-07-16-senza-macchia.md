@@ -6,8 +6,6 @@ author: gio
 coverimg:
   source: 2014-07-16-sopranos_silvio_clean.jpg
   sourcet: 2014-07-16-sopranos_silvio_clean_t.jpg
-  rsource:
-  dsource: "2014-07-16-sopranos_silvio_clean.jpg"
   alt: senza macchia
 tags:
 - RAI

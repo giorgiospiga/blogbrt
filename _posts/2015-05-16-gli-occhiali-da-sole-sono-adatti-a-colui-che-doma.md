@@ -7,8 +7,6 @@ author: gio
 coverimg:
   source: "2015-05-16-occhiali.jpg"
   sourcet: "2015-05-16-occhiali_t.jpg"
-  rsource:
-  dsource: "2015-05-16-occhiali.jpg"
   alt: occhiali da sole
 tags:
 - Juventus

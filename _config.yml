@@ -1,7 +1,7 @@
 # Site settings
 title: Brattea
 description: "Indagini speziate"
-url: https://giorgiospiga.github.io
+url: https://www.brattea.net
 
 # Author settings
 author:
@@ -15,6 +15,7 @@ navbottom: false
 
 # Pagination
 paginate: 5
+paginate_path: "/page:num/"
 prevpage: Precedente
 nextpage: Successiva
 mprevpage: "&laquo;"
@@ -29,13 +30,13 @@ include:      [".htaccess"]
 exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "Gemfile", "Gemfile.lock", "vendor/gems/", "vendor/ruby/", "LICENSE", "README.md", "CNAME", "Vagrantfile", ".gitignore", ".DS_Store"]
 
 # Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      false
-unpublished: false
+#show_drafts: null
+#limit_posts: 0
+#future:      false
+#unpublished: false
 
 # Plugins
-whitelist: []
+#whitelist: []
 gems:
   - jekyll-paginate
   - jekyll-feed
@@ -51,7 +52,6 @@ baseurl:  # does not include hostname
 
 # Outputting
 permalink:     pretty
-paginate_path: /page:num/
 timezone:      Europe/Rome
 
 # Services
