@@ -1,19 +1,19 @@
 <footer class="main-footer">
-  <div class="container ">
-    <div class="row align-items-center">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
 
       <div class="col">
         {% if site.navbottom == true %}
           {% include nav.html navclass='nav-bottom' %}
         {% endif %}
-      </div>
 
-      <div class="col">
-        <span>
-          © Copyright Giorgio Spiga 2017
-          {% if site.time | date:"%Y" == 2017 %}
+
+        <span class="text-align-center">
+          © Copyright Giorgio Spiga, 2017<!--
+          -->{% if site.time | date:"%Y" == "2017" %}<!--
+          -->.
           {% else %}
-          - ciao{{ site.time | date:"%Y" }}
+          - {{ site.time | date:"%Y" }}.
           {% endif %}
         </span>
       </div>

@@ -11,7 +11,7 @@ author:
 
 # Nav settings
 navtop: true
-navbottom: true
+navbottom: false
 
 # Pagination
 paginate: 5
