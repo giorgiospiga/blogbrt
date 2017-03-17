@@ -1,13 +1,9 @@
 /* Header */
 
 .main-header {
-    position: relative;
-    display: table;
     width: 100%;
     min-height: 20%;
-    background: $gray-lighter no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
+    background: $gray-lighter;
 
     .container {
       width: 100%;
