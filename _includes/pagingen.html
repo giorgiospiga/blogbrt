@@ -6,7 +6,7 @@
 
   <li>
 
-    <a class="article" href="{{site.baseurl}}{{post.url}}">
+    <a class="article" href="{{ post.url | prepend: site.baseurl }}">
       <h4>{{ post.title }}</h4>
       <span class="date-index">
         {% assign m = post.date | date: "%-m" %}
