@@ -1,18 +1,17 @@
 /* Nav */
 
-.nav-top {
+.main-nav {
 	li {
-	  font-size:$base-font-size*1.05;
+	  font-size:$base-font-size*1.125;
 
 		a {
 			padding: 3px;
 			color: $gray-dark;
-			text-shadow: 1px 0px 326px rgba(225, 225, 225, 0.995);
-			border-radius: 5%;
+			text-shadow: 1px 0px 2px rgba(225, 225, 225, 0.995);
 		}
 
 		a:hover {
-		  color: $gray-dark;
+		  color: $gray;
 			text-decoration: underline;
 		}
 	}
