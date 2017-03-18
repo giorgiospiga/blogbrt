@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Capriccio
-description:
+description: 
 date: '2017-03-11 17:09:04 +01:00'
 author: gio
 coverimg:
-  source:
-  sourcet:
-  alt:
+  source: 
+  sourcet: 
+  alt: 
 tags:
 - Juventus
 ---
