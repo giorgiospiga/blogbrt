@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intenzione
-date: '2013-10-17T02:07:00+02:00'
+date: 2013-10-17 02:07
 author: gio
 ---
 Quante volte ci mandiamo mail da soli per ricordarci un link, qualcosa da fare, o segnamo appunti in luoghi improbabili?  Io sono un vero mostro in questo senso.

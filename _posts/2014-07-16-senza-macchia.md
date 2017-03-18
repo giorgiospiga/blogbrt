@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Senza macchia
-date: 2014-07-16T16:12:00+02:00
+date: '2014-07-16T14:12:00.000+00:00'
 author: gio
 coverimg:
   source: 2014-07-16-sopranos_silvio_clean.jpg

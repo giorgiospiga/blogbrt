@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Il più importante
-description: Scontro tra FBI e Apple per quello che Edward Snowden definisce "il caso tecnologico del decennio"
-date: 2016-02-18 00:00:14 +0100
-author: "gio"
+description: Scontro tra FBI e Apple per quello che Edward Snowden definisce "il caso
+  tecnologico del decennio"
+date: '2016-02-17T23:00:14.000+00:00'
+author: gio
 tags:
 - Apple
 - Tim Cook

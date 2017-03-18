@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Autentico
-description:
-date: 2015-05-16T20:50:10+02:00
+description: 
+date: '2015-05-16T18:50:10.000+00:00'
 author: gio
 coverimg:
-  source: "2015-05-16-occhiali.jpg"
-  sourcet: "2015-05-16-occhiali_t.jpg"
+  source: 2015-05-16-occhiali.jpg
+  sourcet: 2015-05-16-occhiali_t.jpg
   alt: occhiali da sole
 tags:
 - Juventus

@@ -1,10 +1,7 @@
-{
-  "gio": {
-    "name": "Giorgio Spiga",
-    "twitter": "giorgiospiga"
-  },
-  "admin": {
-    "name": "admin",
-    "twitter": "/"
-  }
-}
+---
+gio:
+  name: Giorgio Spiga
+  twitter: giorgiospiga
+admin:
+  name: admin
+  twitter: "/"
