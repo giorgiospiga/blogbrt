@@ -71,10 +71,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      title: TITOLOPOST
-      date: 200-07-16T16:12:00+02:00
+      title:
+      date: 2000-07-16T16:12:00+02:00
       author: gio
       coverimg:
-        source: "NOMEIMG.jpg"
-        alt: \ALTIMG
-      tags: TAG
+        source:
+        alt:
+      tags:
