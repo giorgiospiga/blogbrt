@@ -2,6 +2,8 @@
 title: Brattea
 description: "Indagini speziate"
 url: www.brattea.net
+logo4: /assets/imgindex/ # square logo
+logo16: /assets/imgindex/logo16.png # narrow logo
 
 # Author settings
 author:
@@ -51,7 +53,7 @@ host:    127.0.0.1
 baseurl:  # does not include hostname
 
 # Outputting
-permalink:     pretty
+permalink:     /:year-:month/:title
 timezone:      Europe/Rome
 
 # Services
