@@ -2,6 +2,8 @@
 title: Brattea
 description: "Indagini speziate"
 url: www.brattea.net
+logo4: /assets/imgindex/ # square logo
+logo16: /assets/imgindex/logo16.png # narrow logo
 
 # Author settings
 author:
