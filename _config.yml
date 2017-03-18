@@ -53,7 +53,7 @@ host:    127.0.0.1
 baseurl:  # does not include hostname
 
 # Outputting
-permalink:     /:year-:month/:title
+permalink:     pretty
 timezone:      Europe/Rome
 
 # Services
