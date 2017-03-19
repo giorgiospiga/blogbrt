@@ -41,7 +41,7 @@ AGGIORNAMENTO 20160219 22:02
 - Reform Government Surveillance [Statement](http://reformgs.tumblr.com/post/139513553507/reform-government-surveillance-statement) Regarding Encryption and Security;
 - Da un articolo del NYTimes [sparisce](https://twitter.com/readDanwrite/status/700395944970420224) un'intera sezione riguardante la Cina e i vantaggi che questa e altri stati otterrebbero con l'implementazione di una backdoor "a regime". Dicono «[normale amministrazione](https://twitter.com/readDanwrite/status/700532251923091456).» Così [non sembrerebbe](https://twitter.com/readDanwrite/status/700533461334024192);
 - C'è anche [il supporto](https://www.eff.org/deeplinks/2016/02/eff-support-apple-encryption-battle) dell'Electronic Frontier Foundation;
-- [Upgrade Your iPhone Passcode](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) to Defeat the FBI’s Backdoor Strategy - The Intercept
+- [Upgrade Your iPhone Passcode](https://theintercept.com/2016/02/18/passcodes-that-can-defeat-fbi-ios-backdoor/) to Defeat the FBI’s Backdoor Strategy - The Intercept;
 - DoJ ora [esige](https://twitter.com/setteBIT/status/700774852375027712) la collaborazione di Apple sull'iPhone del terrorista - @SetteBIT, DoJ files motion to compel Apple to comply with FBI order - [CNBC](http://www.cnbc.com/2016/02/19/doj-files-motion-to-compel-apple-to-comply-with-fbi-order.html);
 - [Più distopia che privacy](http://www.apogeonline.com/webzine/2016/02/19/piu-distopia-che-privacy).
 
@@ -50,7 +50,7 @@ AGGIORNAMENTO 20160220 22:17
 - [No, Apple Has Not Unlocked 70 iPhones For Law Enforcement](http://techcrunch.com/2016/02/18/no-apple-has-not-unlocked-70-iphones-for-law-enforcement/);
 - La password dell'Apple ID [sarebbe](http://www.buzzfeed.com/johnpaczkowski/apple-terrorists-appleid-passcode-changed-in-government-cust#.ayPBORE8kY) stata cambiata dopo la tragedia, quindi quando l'iPhone [era già sotto custodia del governo federale](http://9to5mac.com/2016/02/19/apple-doj-response-fbi-backdoor/);
 - Snowden e altri [dicono](https://twitter.com/Snowden/status/700823383961792512) che l'FBI avrebbe già tutti i dati utili all'indagine, ottenibili da altre fonti o con altri metodi;
-- Richard Stallman, fondatore di GNU e della fondazione per il software libero (Free Software Foundation), [non si dice contrario](https://stallman.org/archives/2015-nov-feb.html#20_February_2016_%28Investigating_one_suspect%29) in linea di principio alle richieste governative.
+- Richard Stallman, fondatore di GNU e della fondazione per il software libero (Free Software Foundation), [non si dice contrario](https://stallman.org/archives/2015-nov-feb.html#20_February_2016_%28Investigating_one_suspect%29) in linea di principio alle richieste governative;
 - [Riassunto](http://venturebeat.com/2016/02/19/apple-fbi-timeline/).
 
 AGGIORNAMENTO 20160221 18:09
