@@ -14,5 +14,5 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Lato|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
-  <link rel="alternate" type="application/rss+xml" title="Brattea href="{ site.baseurl }/feed.xml">
+  {% feed_meta %}
 </head>
