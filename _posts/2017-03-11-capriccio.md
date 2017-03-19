@@ -2,7 +2,7 @@
 layout: post
 title: Capriccio
 description: 
-date: '2017-03-11T17:09:04+01:00'
+date: 2017-03-11 17:09
 author: gio
 coverimg:
   source: 
