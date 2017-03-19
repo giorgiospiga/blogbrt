@@ -42,6 +42,7 @@ exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "Gemfile", "Ge
 gems:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Conversion
 markdown:    kramdown
@@ -62,7 +63,7 @@ timezone:      Europe/Rome
 # Post images source
 imgsource: /assets/imgposts/ # Local source
 #imgrsource # Remote, external source
-imgdsource: https://dl.dropboxusercontent.com/u/173133/site/postimgs/ # Dropbox source like https://dl.dropboxusercontent.com/u/USER_ID/SOME_FOLDER/
+imgdsource: https://dl.dropboxusercontent.com/u/173133/site/postimgs/
 
 # Defaults
 
