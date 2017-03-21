@@ -4,7 +4,7 @@ title: Selma Lagerlöf - Il viaggio meraviglioso di Nils Holgersson
 description: Meraviglioso davvero
 date: '2010-01-07 03:22:00 +01:00'
 author: gio
-coverimg:
+image:
   source: 2010-01-07-Nils-Holgersson.jpg
   sourcet: 2010-01-07-Nils-Holgersson_t.jpg
   alt: Selma Lagerlöf - Il viaggio meraviglioso di Nils Holgersson

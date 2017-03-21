@@ -3,7 +3,7 @@ layout: post
 title: TITOLOPOST
 date: 2014-07-16T16:12:00+02:00
 author: gio
-coverimg:
+image:
   source: "NOMEIMG.jpg"
   alt: \ALTIMG
 tags:
