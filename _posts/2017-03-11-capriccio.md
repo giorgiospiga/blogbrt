@@ -4,7 +4,7 @@ title: Capriccio
 description: 
 date: 2017-03-11 17:09
 author: gio
-coverimg:
+image:
   source: 
   sourcet: 
   alt: 

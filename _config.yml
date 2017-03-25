@@ -2,8 +2,8 @@
 title: Brattea
 description: "Indagini speziate"
 url: www.brattea.net
-logo4: /assets/imgindex/ # square logo
-logo16: /assets/imgindex/logo16.png # narrow logo
+logo4: /assets/images/ # square logo
+logo16: /assets/images/logo16.png # narrow logo
 
 # Author settings
 author:
@@ -61,7 +61,7 @@ timezone:      Europe/Rome
 #google_analytics: 'UA-XXXXXXXX-X'
 
 # Post images source
-imgsource: /assets/imgposts/ # Local source
+imgsource: /assets/images/ # Local source
 #imgrsource # Remote, external source
 imgdsource: https://dl.dropboxusercontent.com/u/173133/site/postimgs/
 
@@ -77,7 +77,7 @@ defaults:
       title:
       date: 2000-07-16T16:12:00+02:00
       author: gio
-      coverimg:
+      image:
         source:
         alt:
       tags:

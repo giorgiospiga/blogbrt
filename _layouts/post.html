@@ -46,22 +46,22 @@ layout: default
           <div class="col-xs-12">
             <div class="mx-1 text-md-left">
               <section id="post-imgcover">
-                {% if page.coverimg.source != null %}
+                {% if page.image.source != null %}
                 <figure class="figure">
-                  <a data-fancybox="gallery" href="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.source }}">
-                    <img src="{{ site.baseurl }}{{ site.imgsource }}{{ page.coverimg.sourcet }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+                  <a data-fancybox="gallery" href="{{ site.baseurl }}{{ site.imgsource }}{{ page.image.source }}">
+                    <img src="{{ site.baseurl }}{{ site.imgsource }}{{ page.image.sourcet }}" class="figure-img img-fluid rounded" alt="{{ post.image.alt }}">
                   </a>
                 </figure>
-                {% elsif page.coverimg.rsource != null %}
+                {% elsif page.image.rsource != null %}
                 <figure class="figure">
-                  <a data-fancybox="gallery" href="{{ page.coverimg.rsource }}">
-                    <img src="{{ page.coverimg.rsource }}" class="figure-img img-fluid rounded" alt="{{ post.coverimg.alt }}">
+                  <a data-fancybox="gallery" href="{{ page.image.rsource }}">
+                    <img src="{{ page.image.rsource }}" class="figure-img img-fluid rounded" alt="{{ post.image.alt }}">
                   </a>
                 </figure>
-                {% elsif page.coverimg.dsource != null %}
+                {% elsif page.image.dsource != null %}
                 <figure class="figure">
-                  <a data-fancybox="gallery" href="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}">
-                  <img src="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.coverimg.dsource }}" class="figure-img img-fluid rounded" alt="{{ page.coverimg.alt }}">
+                  <a data-fancybox="gallery" href="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.image.dsource }}">
+                  <img src="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.image.dsource }}" class="figure-img img-fluid rounded" alt="{{ page.image.alt }}">
                   </a>
                 </figure>
                 {% else %}

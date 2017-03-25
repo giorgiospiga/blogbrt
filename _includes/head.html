@@ -8,7 +8,7 @@
   <meta property="og:title:" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if layout == "post" %}{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
-  <meta property="og:image" content="{% if page.coverimg %}{% if page.coverimg.sourcet %}{{ page.coverimg.sourcet | prepend: site.baseurl }}{% else %}{{ page.coverimg.source | prepend: site.baseurl }}{% endif %}{% else %}{{ site.logo4 | prepend: site.baseurl}}{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{% if page.image.sourcet %}{{ page.image.sourcet | prepend: site.baseurl }}{% else %}{{ page.image.source | prepend: site.baseurl }}{% endif %}{% else %}{{ site.logo4 | prepend: site.baseurl}}{% endif %}">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="stylesheet" href="{{ "/assets/css/bs/bootstrap.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">
