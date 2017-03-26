@@ -5,6 +5,7 @@
 
 /* BASE - Base styles, variables, mixins, etc. */
 
+@import 'base/_mixins.scss';
 @import 'base/_variables.scss';
 @import 'base/_base.scss';
 
@@ -21,3 +22,4 @@
 @import 'layouts/_header.scss';
 @import 'layouts/_footer.scss';
 @import 'layouts/_pagination.scss';
+@import 'layouts/_postheader.scss';

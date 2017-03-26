@@ -1,13 +1,24 @@
-<nav class="main-nav{% if page.cover %} overlay{% endif %}">
-  <ul class="nav flex-sm-column {{include.navclass}}">
-    <li class="nav-item mb-1 mr-3{% if page.url == '/' %} active{% endif %}">
-      <a href="{{site.baseurl}}/" class="nav-link{% if page.url == '/' %} current{% endif %}">Inizio<span class="sr-only"> (pagina iniziale)</span>{% if page.url == '/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
-    </li>
-    <li class="nav-item mb-1 mr-3{% if page.url == '/chisono' %} active{% endif %}">
-      <a href="{{site.baseurl}}/info" class="nav-link{% if page.url == '/info/' %} current{% endif %}">Info{% if page.url == '/info/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
-    </li>
-    <li class="nav-item mb-1 mr-3">
-      <a href="{{site.baseurl}}/feed.xml" class="nav-link">Iscriviti</a>
-    </li>
-  </ul>
+<nav class="main-nav">
+  <div class="container">
+    <div class="row no-gutters justify-content-left">
+      <div class="col-xs-12 col-sm-9 col-md-8 col-lg-6">
+        <ul class="nav">
+          <li class="nav-item{% if page.url == '/' %} active{% endif %}">
+            <a href="{{site.baseurl}}/" class="nav-brand nav-link py-2 px-3{% if page.url == '/' %} current{% endif %}">
+              <img src="/assets/images/favicon.png" width="20" height="20" class="d-inline-block align-top" alt="{{ site.title }}">
+              {{ site.title }}</h1>
+              <span class="sr-only"> (pagina iniziale)</span>{% if page.url == '/' %}<span class="sr-only"> (current)</span>{% endif %}
+            </a>
+          </li>
+          <li class="nav-item{% if page.url == '/chisono' %} active{% endif %}">
+            <a href="{{site.baseurl}}/info" class="nav-link py-2 px-3{% if page.url == '/info/' %} current{% endif %}">Info{% if page.url == '/info/' %}<span class="sr-only"> (current)</span>{% endif %}</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{site.baseurl}}/feed.xml" class="nav-link py-2 px-3">Iscriviti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </nav>
