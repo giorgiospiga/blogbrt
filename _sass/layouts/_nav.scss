@@ -13,9 +13,7 @@
 
 
 		a:hover {
-
-			@include background-opacity($accent-color, $opacity: 0.125);
-		  color: $gray;
+		  color: $gray-light;
 			text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.395);
 		}
 	}

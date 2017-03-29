@@ -86,18 +86,11 @@ layout: default
           <footer>
 
           </footer>
-          <aside>
-            {% if page.previous.url %}
-            <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
-            {% endif %}
-             {% if page.next.url %}
-            <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
-            {% endif %}
-          </aside>
-          
         </div>
-
       </div>
     </div>
   </article>
+  <aside>
+    {% include paglinkspost.html%}
+  </aside>
 </section>
