@@ -1,25 +1,31 @@
 /* Pagination */
 
-a.page-link.text-muted.pagdescr {
-	background-color: transparent;
-	border: 0;
-}
+nav.paglinks {
 
-.pagination li a.page-link {
-	padding-top: 3px;
-	padding-bottom: 3px;
-	font-size: $base-font-size*1.12;
-	background-color: $accent-color;
-	color: $gray-lightest;
-	border-radius: 100px !important;
-}
+	 ul {
 
-.pagination li a.page-link span {
-	padding: 0 2px;
-	font-size: $base-font-size*1.5;
-}
+		 li {
+			 width:50%;
 
-.pagination li a.page-link:hover {
-	background-color: $accent-color-fdl;
-	color: $gray-lightest;
+
+			 a {
+				 color: $accent-color;
+				 text-shadow: 1px 0px 1px rgba(231, 231, 231, 0.5);
+				 text-align: center;
+				 font-size: $base-font-size*1.25;
+				 border-radius: 5px;
+				 border: 1px solid transparent;
+				 text-decoration:underline;
+				 background-color: transparent;
+
+
+				 &:hover {
+					 color: $gray;
+					 background-color: transparent;
+					 border: 1px solid transparent;
+
+				 }
+			 }
+		 }
+	 }
 }

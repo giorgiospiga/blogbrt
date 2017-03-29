@@ -18,8 +18,8 @@ navbottom: false
 # Pagination
 paginate: 5
 paginate_path: "/page:num/"
-prevpage: Precedente
-nextpage: Successiva
+prevpage: "&laquo Più nuovi"
+nextpage: "Più vecchi &raquo"
 mprevpage: "&laquo;"
 mnextpage: "&raquo;"
 

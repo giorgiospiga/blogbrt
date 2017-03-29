@@ -1,30 +1,21 @@
 /* Nav */
 
 .main-nav {
+	background-color: $bg-general;
+
 	li {
 	  font-size:$base-font-size*1.125;
 
 		a {
-			padding: 3px;
 			color: $gray-dark;
 			text-shadow: 1px 0px 2px rgba(225, 225, 225, 0.995);
-		}
+			}
+
 
 		a:hover {
-		  color: $gray;
-			text-decoration: underline;
+		  color: $gray-light;
+			text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.395);
 		}
 	}
-}
 
-.nav-bottom {
-
-	li {
-		float: left;
-	  font-size: 0.8875rem;
-	}
-
-	a {
-		color: $gray;
-	}
 }
