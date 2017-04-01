@@ -5,7 +5,6 @@
   padding: 40px 0 0 0;
 }
 
-
 article {
   width: 98%;
   margin:0 auto 7px auto;
@@ -42,8 +41,6 @@ article {
         font-size: $base-font-size*3.5;
       }
     }
-
-
 	}
 
 	section {
@@ -76,48 +73,43 @@ article {
     		border-bottom: 1px solid;
     		text-decoration:none;
     	}
-
     }
 
-  @include media-breakpoint-up(sm) {
-    p {
-      font-size: $base-font-size*1.25;
-      width: 550px;
-      margin: 0 auto 8.5px auto;
+    @include media-breakpoint-up(sm) {
+      p {
+        font-size: $base-font-size*1.25;
+        width: 550px;
+        margin: 0 auto 8.5px auto;
+      }
+      ul, blockquote {
+        @extend p;
+        margin-bottom: 2px;
+      }
     }
-    ul, blockquote {
-      @extend p;
-      margin-bottom: 2px;
+
+    @include media-breakpoint-up(md) {
+      p {
+        font-size: $base-font-size*1.28;
+        line-height: 1.7rem;
+        margin-bottom: 11px;
+      }
+      ul, blockquote {
+        @extend p;
+        margin-bottom: 2px;
+      }
     }
-  }
 
-  @include media-breakpoint-up(md) {
-    p {
-      font-size: $base-font-size*1.28;
-      line-height: 1.7rem;
-      margin-bottom: 11px;
+    @include media-breakpoint-up(lg) {
+      p {
+        font-size: $base-font-size*1.3;
+        line-height: 1.8rem;
+        margin-right: 0;
+      }
+      ul, blockquote {
+        @extend p;
+        margin-bottom: 2px;
+      }
     }
-    ul, blockquote {
-      @extend p;
-      margin-bottom: 2px;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    p {
-      font-size: $base-font-size*1.3;
-      line-height: 1.8rem;
-      margin-right: 0;
-    }
-    ul, blockquote {
-      @extend p;
-      margin-bottom: 2px;
-    }
-  }
-
-
-
-
   }
 }
 
