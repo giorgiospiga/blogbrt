@@ -1,0 +1,25 @@
+<section id="post-imgcover">
+  {% if page.image.source != null %}
+  <figure class="figure">
+    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ site.imgsource }}{{ page.image.source }}">
+      <img src="{{ site.baseurl }}{{ site.imgsource }}{{ page.image.sourcet }}" class="figure-img img-fluid rounded" alt="{{ post.image.alt }}">
+    </a>
+  </figure>
+  {% elsif page.image.rsource != null %}
+  <figure class="figure">
+    <a data-fancybox="gallery" href="{{ page.image.rsource }}">
+      <img src="{{ page.image.rsource }}" class="figure-img img-fluid rounded" alt="{{ post.image.alt }}">
+    </a>
+  </figure>
+  {% elsif page.image.dsource != null %}
+  <figure class="figure">
+    <a data-fancybox="gallery" href="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.image.dsource }}">
+    <img src="https://dl.dropboxusercontent.com/u/173133/site/postimgs/{{ page.image.dsource }}" class="figure-img img-fluid rounded " alt="{{ page.image.alt }}">
+    </a>
+  </figure>
+  {% else %}
+  <div class="mb-4">
+
+  </div>
+  {% endif %}
+</section>
