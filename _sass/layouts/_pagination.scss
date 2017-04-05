@@ -15,7 +15,7 @@ nav.paglinks {
 				 font-size: $base-font-size*1.25;
 				 border-radius: 5px;
 				 border: 1px solid transparent;
-				 text-decoration:underline;
+				 text-decoration:none;
 				 background-color: transparent;
 
 
@@ -23,6 +23,19 @@ nav.paglinks {
 					 color: $gray;
 					 background-color: transparent;
 					 border: 1px solid transparent;
+					 text-decoration:none;
+
+				 }
+				 h6 {
+					 small {
+						 text-transform: uppercase;
+						 color: $gray;
+
+						 &:hover {
+							 color: $gray-light;
+						 }
+					 }
+
 
 				 }
 			 }
