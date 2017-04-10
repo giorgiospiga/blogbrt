@@ -56,12 +56,14 @@ article {
 	}
 
   #postcontent {
-    width: 94%;
-    margin-left: auto;
-    margin-right: auto;
-    
+
+
     p {
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
       font-size: $base-font-size*1.125;
+
 
       ul, blockquote {
         @extend p;
@@ -84,15 +86,37 @@ article {
         font-size: $base-font-size*1.25;
         width: 550px;
         margin: 0 auto 8.5px auto;
+
+
       }
       ul, blockquote {
         @extend p;
         margin-bottom: 2px;
       }
+      blockquote {
+        background-color: $gray-lighter;
+        color: $gray-dark;
+        opacity: 0.75;
+        padding: 15px;
+
+        width: 100%!important;
+        margin: 10px 0;
+        text-align: right;
+        border-radius: 3px;
+
+        p {
+          width: 98%!important;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 1.125em;
+        }
+      }
+
     }
 
     @include media-breakpoint-up(md) {
       p {
+        width: 620px;
         font-size: $base-font-size*1.28;
         line-height: 1.7rem;
         margin-bottom: 11px;
