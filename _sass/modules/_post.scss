@@ -55,6 +55,9 @@ article {
 		hyphens: auto;
 	}
 
+  #postcontent {
+    width: 100%;
+
     p {
       width: 94%;
       margin-left: auto;
@@ -136,7 +139,7 @@ article {
       }
     }
   }
-
+}
 
 .lead {
 	font-size: $base-font-size*1.35;
