@@ -20,12 +20,8 @@ paginate: 5
 paginate_path: "/page:num/"
 prevpage: "&laquo Più nuovi"
 nextpage: "Più vecchi &raquo"
-mprevpage: "&laquo Più nuovi"
-mnextpage: "Più vecchi &raquo"
 prevpost: "Post precedente"
 nextpost: "Post successivo"
-mprevpost: "Post precedente"
-mnextpost: "Post successivo"
 
 # Sass
 sass:
