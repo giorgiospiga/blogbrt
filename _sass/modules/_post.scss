@@ -154,9 +154,9 @@ article {
   background-color: $accent-color-fdl;
   border-radius: 100%;
   box-shadow: 1px, 1px, 1px, (123,123,123,0.5);
-}
-@include media-breakpoint-up(lg) {
+}/*
+@include media-breakpoint-up(sm) {
   section#post-imgcover {
-    text-align: left;
+    text-align: center;
   }
-}
+}*/
