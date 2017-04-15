@@ -44,16 +44,6 @@ gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-toc
-  - jekyll-archives
-
-jekyll-archives:
-  enabled:
-    - year
-  layouts:
-    year: archive
-  permalinks:
-    year: '/:year/'
 
 # Conversion
 markdown:    kramdown
