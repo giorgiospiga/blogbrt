@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<section class="bg-eff">
+<section class="bg-eff" style="background-image: url({{ site.baseurl }}/assets/images/bg-images/crossword.png);">
   <article class="pt-3 {% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-9">
           <header class="text-xs-left text-sm-center mb-4">
             <h1 class="text-xs-left text-sm-center"><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
-            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 10 | append: '»' | prepend: '«' }}{% endif %}</span>
+            {% if page.description %}
+            <span class="lead">{{ page.description }}</span>
             <br/>
+            {% endif %}
             <span class="text-uppercase"><!-- Whitespace added for readability -->
               {% assign m = page.date | date: "%-m" %}
               {{ page.date | date: "%-d" }}
@@ -41,13 +43,11 @@ layout: default
       </div>
 
       <div class="row justify-content-center">
-        {% if page.image.source %}
-        <div class="col-xs-12 col-lg-5 push-lg-7 text-center">
-          {% include imgcover.html %}
-        </div>
-        {% endif %}
-        <div class="col-xs-12{% if page.image.source %} col-lg-7 pull-lg-5{% endif %}">
+        <div class="col-xs-12">
           <section id="postcontent" class="text-justify">
+            <figure class="text-center">
+              {% include imgcover.html %}
+            </figure>
             {{ content | smartify }}
           </section>
           <footer>
