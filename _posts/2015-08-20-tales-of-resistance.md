@@ -1,13 +1,13 @@
 ---
 layout: post
 title: The tales of arrival and resistance
-date: 2015-08-20T15:37:00
+date: '2015-08-20T15:37:00.000+00:00'
 author: gio
 image:
-  source: "2015-08-20-tales_onepiece.jpg"
-  alt: "Rebecca's choice"
+  source: 2015-08-20-tales_onepiece.jpg
+  alt: Rebecca's choice
 tags:
- - ONE PIECE
+- ONE PIECE
 ---
 
 "The tales of arrival and resistance."
