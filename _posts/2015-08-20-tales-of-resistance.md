@@ -9,7 +9,7 @@ image:
 tags:
 - ONE PIECE
 coverimg:
-  source: 2015-08-20-tales-onepiece.jpg
+  source: 2015-08-20-tales_onepiece.jpg
   alt: Rebecca's choice
 description: ''
 ---
