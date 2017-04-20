@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The tales of arrival and resistance
-description: La scelta di Rebecca
+description: ''
 date: '2015-08-20T15:37:00.000+00:00'
 author: gio
 image:
@@ -12,7 +12,6 @@ tags:
 coverimg:
   source: 2015-08-20-tales_onepiece.jpg
   alt: Rebecca's choice
-description: ''
 ---
 
 "The tales of arrival and resistance."
