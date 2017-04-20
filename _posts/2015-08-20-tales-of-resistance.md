@@ -8,6 +8,10 @@ image:
   alt: Rebecca's choice
 tags:
 - ONE PIECE
+coverimg:
+  source: 2015-08-20-tales-onepiece.jpg
+  alt: Rebecca's choice
+description: ''
 ---
 
 "The tales of arrival and resistance."
