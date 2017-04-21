@@ -4,6 +4,7 @@ title: Intenzione
 date: 2013-10-17 02:07
 author: gio
 ---
+
 Quante volte ci mandiamo mail da soli per ricordarci un link, qualcosa da fare, o segnamo appunti in luoghi improbabili?  Io sono un vero mostro in questo senso.
 
 Ho notato da un po’ di tempo a questa parte che segnarmi dati, nomi, articoli da leggere, ha una funzione che va oltre il semplice procrastinare: ci si trova di fronte all’accumulo di appunti, per paura di scordarsi qualcosa, e invece ci si ritrova in mezzo all’immondizia che non leggeremo mai.

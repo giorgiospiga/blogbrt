@@ -1,17 +1,15 @@
 ---
 layout: post
 title: The tales of arrival and resistance
-description: ''
+description: Oda ci dice ancora una volta che Luffy è sostanzialmente un bambino...
 date: '2015-08-20T15:37:00.000+00:00'
 author: gio
 image:
   source: 2015-08-20-tales_onepiece.jpg
+  sourcet: 2015-08-20-tales_onepiece.jpg
   alt: La scelta di Rebecca
 tags:
 - ONE PIECE
-coverimg:
-  source: 2015-08-20-tales_onepiece.jpg
-  alt: Rebecca's choice
 ---
 
 "The tales of arrival and resistance."

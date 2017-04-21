@@ -11,6 +11,7 @@ tags:
 - PD
 - Europee
 ---
+
 Il PD propone e promuove scelte importanti perché diretta espressione della sua volontà e le sente urgenti? No. “Un'Europa solidale” perché lo ritengo giusto? No, perché “ce lo chiede Mario.”
 
 E io che credevo che la volontà collettiva si esprimesse tramite il consenso, cercando di convincere le persone. Tante istanze che si confrontano per promuovere un percorso virtuoso di legittimazione popolare tramite elezioni, una varietà multicolore di attività politica si trasforma così nel bivio inevitabile tra quello che ci chiede Mario e quello che non chiede.

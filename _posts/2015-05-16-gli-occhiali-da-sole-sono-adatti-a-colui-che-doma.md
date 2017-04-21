@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autentico
-description: 
+description:
 date: '2015-05-16T18:50:10.000+00:00'
 author: gio
 image:
@@ -11,4 +11,5 @@ image:
 tags:
 - Juventus
 ---
+
 Gli occhiali da sole sono adatti a colui che doma la bestia, e hanno ancora maggior significato nella vittoria a fatto compiuto.
