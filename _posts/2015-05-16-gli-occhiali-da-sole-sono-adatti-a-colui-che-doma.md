@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autentico
-description:
+description: 
 date: '2015-05-16T18:50:10.000+00:00'
 author: gio
 image:
