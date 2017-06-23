@@ -1,0 +1,11 @@
+<ul>
+  {% for ricetta in site.pages %}
+  {% if ricetta.type == include.type %}
+  <li>
+    <a href="{{ site.baseurl}}{{ ricetta.url }}">
+      <h3>{{ ricetta.title }}</h3>
+    </a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
