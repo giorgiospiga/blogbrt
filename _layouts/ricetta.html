@@ -1,40 +1,81 @@
 ---
 layout: default
 ---
-<div class=' header-image gradient-overlay'>
-  <div class='header-image__image' style="background-image: url('https://unsplash.it/800/530/?random')">
-    <div class='header-image__content'>
-      <div class='header-image__content__container'>
-        <h1>Full height big mama header</h1>
-        <p>Some meta</p>
+
+<section class="bg-eff">
+  <article class="{% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
+    <div class=".container-fluid">
+      <div class="row ">
+        <div class="col recipe">
+          <header class="obscured text-center mb-4">
+            <h1 class="text-center"><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+            {% if page.porzioni %}{% if page.porzioni > 1 %}<span>Per {{ page.porzioni }} persone</span>{% else %}<span>Per {{ page.porzioni }} persona</span>{% endif %}{% endif %}
+          </header>
+        </div>
       </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xs-12">
+          <section id="postcontent" class="text-justify">
+            <div id="imgcover" class="text-center">
+              {% include imgcover.html %}
+            </div>
+            {{ content | smartify }}
+          </section>
+          <footer>
+            {% if page.description %}
+            <span class="lead">{{ page.description }}</span>
+            <br/>
+            {% endif %}
+            <span class="text-uppercase"><!-- Whitespace added for readability -->
+              {% assign m = page.date | date: "%-m" %}
+              {{ page.date | date: "%-d" }}
+              {% case m %}
+                {% when '1' %}gennaio
+                {% when '2' %}febbraio
+                {% when '3' %}marzo
+                {% when '4' %}aprile
+                {% when '5' %}maggio
+                {% when '6' %}giugno
+                {% when '7' %}luglio
+                {% when '8' %}agosto
+                {% when '9' %}settembre
+                {% when '10' %}ottobre
+                {% when '11' %}novembre
+                {% when '12' %}dicembre
+              {% endcase %}
+              {{ page.date | date: "%Y" }}</span>
+              {% for category in page.categories %}
+            <span> • {{ page.categories }}</span>
+            {% endfor %}
+            <span>• di
+              <a href="https://twitter.com/{{ site.data.authors[page.author].twitter }}" rel="author">
+                {{ site.data.authors[page.author].name }}
+              </a>
+            </span>
+          </footer>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-11 col-md-10 col-lg-8 justify-content-center">
+          <div class="col-xs-12 d-flex justify-content-center mt-5 mb-3">
+            <div class="aftpst img-rounded mr-1">
+
+            </div>
+            <div class="aftpst img-rounded mx-1">
+
+            </div>
+            <div class="aftpst img-rounded ml-1">
+
+            </div>
+          </div>
+          <aside>
+            {% include paglinkspost.html%}
+          </aside>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
-<div class='containerzz'>
-  <p>
-    Redesigning
-    <a href='blog.alienlebarge.ch'>
-      my blog
-    </a>
-    . I wanted something with full height images. Here's the result...
-  </p>
-  <h2>Changelog</h2>
-  <dl>
-    <dt>Version 0.0.1</dt>
-    <dd>2014-07-22 - Release</dd>
-    <dt>Version 0.0.2</dt>
-    <dd>2014-07-22 - Update docs in HTML</dd>
-    <dt>Version 0.0.3</dt>
-    <dd>2014-07-24 - extract <code>.gradient-overlay</code> class</dd>
-    <dt>Version 0.0.4</dt>
-    <dd>Force scrolling on iOS</dd>
-  </dl>
-  <h2>Things to do &amp; possible improvements</h2>
-  <ul>
-    <li>Fix <code>article</code>'s height to be <code>height: 100%</code> and cause element to scroll up when arriving at the bottom of the page (<a href="https://cl.ly/image/2c381y402V38" target="_blank">gifs</a>).</li>
-    <li>Responsive background images</li>
-    <li>add medium fadding effect on scroll</li>
-    <li>add medium blur effect on scroll</li>
-  </ul>
-</div>
+  </article>
+
+</section>
