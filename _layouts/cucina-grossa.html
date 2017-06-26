@@ -56,6 +56,19 @@ layout: default
           </footer>
         </div>
       </div>
+      <section>
+        <div class="">
+          <ul>
+            {% for ingrediente in page.ingredienti %}
+            <li>
+              {% capture unit_words %}{{ ingrediente.unit }}{% endcapture %}
+              {% assign unit-words = unit_words | number_of_words %}
+              {{ ingrediente.unit }} {% if unit-words < 2 %}{% else %}di {% endif %}{{ ingrediente.item }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
       <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-11 col-md-10 col-lg-8 justify-content-center">
           <div class="col-xs-12 d-flex justify-content-center mt-5 mb-3">

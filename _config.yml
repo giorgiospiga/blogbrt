@@ -85,4 +85,5 @@ defaults:
 
 # Collections
 collections:
-  ricette:
+  cucina-grossa:
+    output: true

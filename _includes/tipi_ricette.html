@@ -1,8 +1,8 @@
 <ul class="row list-unstyled">
-  {% for ricetta in site.ricette %}
+  {% for ricetta in site.cucina-grossa %}
   {% if ricetta.type == include.type %}
 
-  <li class="col-3" style="background-color: {% cycle "black", "white", "red" %}">
+  <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color: {% cycle "black", "white", "red" %}">
     <a href="{{ site.baseurl}}{{ ricetta.url }}">
       <h3>{{ ricetta.title }}</h3>
     </a>

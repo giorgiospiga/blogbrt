@@ -1,5 +1,5 @@
 ---
-layout: ricetta
+layout: cucina-grossa
 title: Caprese
 meta: dednwu dnn wudinwein enw
 type: ap

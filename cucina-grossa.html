@@ -13,4 +13,14 @@ layout: default
 
   {% include tipi_ricette.html type='dolce' %}
 
+  <h2>Dolci</h2>
+
+  {% include tipi_ricette.html type='dolces' %}
+
 </div>
+
+{% for ricetta in site.ricette %}
+<div class="">
+  {{ ricetta.title }}
+</div>
+{% endfor %}
