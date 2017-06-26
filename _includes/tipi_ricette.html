@@ -1,11 +1,14 @@
-<ul>
-  {% for ricetta in site.pages %}
+<ul class="row list-unstyled">
+  {% for ricetta in site.ricette reversed %}
   {% if ricetta.type == include.type %}
-  <li>
+
+  <li class="col-3" style="{% if forloop.first %}background-color: black;{% endif %}background-color: {% cycle "black", "white", "red" %};">
     <a href="{{ site.baseurl}}{{ ricetta.url }}">
+      <img src="" alt="{{ ricetta.title }} - {{ ricetta.meta }}">
       <h3>{{ ricetta.title }}</h3>
     </a>
   </li>
+
   {% endif %}
   {% endfor %}
 </ul>
