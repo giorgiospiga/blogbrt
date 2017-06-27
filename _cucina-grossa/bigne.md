@@ -1,5 +1,5 @@
 ---
-layout: cucina-grossa
+layout: cucina-grossa-ricetta
 title: Bignè
 meta: dednwu dnn wudinwein enw
 type: dolce

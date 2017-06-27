@@ -1,5 +1,5 @@
 ---
-layout: cucina-grossa
+layout: cucina-grossa-ricetta
 title: Dolce sardo
 type: dolces
 ---

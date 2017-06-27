@@ -6,8 +6,11 @@
 }
 
 article {
-  width: 98%;
-  margin:0 auto;
+  .artpost {
+    width: 98%;
+    margin:0 auto;
+  }
+
 
   .container {
     width:100%!important;

@@ -1,5 +1,5 @@
 ---
-layout: cucina-grossa
+layout: cucina-grossa-ricetta
 title: Caprese2
 type: ap
 author: gio
