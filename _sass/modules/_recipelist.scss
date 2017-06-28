@@ -1,0 +1,14 @@
+/* RECIPElist */
+header.header-grossalist {
+  background-color: $accent-color-fdl;
+  &:hover {
+    background-color: $accent-color;
+  }
+  a {
+    color: $gray-lighter;
+
+  }
+}
+.bg-grossa {
+  background-color: $bg-postlist;
+}

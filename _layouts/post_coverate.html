@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<section class="bg-eff">
+  <article class="pt-3 {% if post.categories %}{{ post.categories }}{% else %}{% endif %}">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-9">
+          <header class="text-xs-left text-sm-center mb-4">
+            <h1 class="text-xs-left text-sm-center"><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
+            <span class="lead">{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | truncatewords: 10 | append: '»' | prepend: '«' }}{% endif %}</span>
+            <br/>
+            <span class="text-uppercase"><!-- Whitespace added for readability -->
+              {% assign m = page.date | date: "%-m" %}
+              {{ page.date | date: "%-d" }}
+              {% case m %}
+                {% when '1' %}gennaio
+                {% when '2' %}febbraio
+                {% when '3' %}marzo
+                {% when '4' %}aprile
+                {% when '5' %}maggio
+                {% when '6' %}giugno
+                {% when '7' %}luglio
+                {% when '8' %}agosto
+                {% when '9' %}settembre
+                {% when '10' %}ottobre
+                {% when '11' %}novembre
+                {% when '12' %}dicembre
+              {% endcase %}
+              {{ page.date | date: "%Y" }}</span>
+              {% for category in page.categories %}
+            <span> • {{ page.categories }}</span>
+            {% endfor %}
+            <span>• di
+              <a href="https://twitter.com/{{ site.data.authors[page.author].twitter }}" rel="author">
+                {{ site.data.authors[page.author].name }}
+              </a>
+            </span>
+          </header>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        {% if page.image.source %}
+        <div class="col-xs-12 col-lg-5 push-lg-7 text-center">
+          {% include imgcover.html %}
+        </div>
+        {% endif %}
+        <div class="col-xs-12{% if page.image.source %} col-lg-7 pull-lg-5{% endif %}">
+          <section id="postcontent" class="text-justify">
+            {{ content | smartify }}
+          </section>
+          <footer>
+
+          </footer>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-11 col-md-10 col-lg-8 justify-content-center">
+          <div class="col-xs-12 d-flex justify-content-center mt-5 mb-3">
+            <div class="aftpst img-rounded mr-1">
+
+            </div>
+            <div class="aftpst img-rounded mx-1">
+
+            </div>
+            <div class="aftpst img-rounded ml-1">
+
+            </div>
+          </div>
+          <aside>
+            {% include paglinkspost.html%}
+          </aside>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+</section>
