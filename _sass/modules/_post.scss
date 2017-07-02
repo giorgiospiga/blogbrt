@@ -26,6 +26,14 @@ article {
         text-decoration: none;
         border-bottom: 1px dashed $accent-color-fdl;
       }
+      
+      h2 {
+        font-size: $base-font-size*1.5;
+        line-height: 1,0688;
+        margin-top: 1,6032;
+        margin-bottom: 0,71253333;
+      
+      }
 		}
     @include media-breakpoint-up(sm) {
       h1 {
@@ -65,7 +73,8 @@ article {
       width: 94%;
       margin-left: auto;
       margin-right: auto;
-      font-size: $base-font-size*1.125;
+      font-size: $base-font-size*1;
+      line-height: 1.6;
 
 
       ul, blockquote {
