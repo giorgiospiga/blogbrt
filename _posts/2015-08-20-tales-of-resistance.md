@@ -9,6 +9,7 @@ image:
   alt: La scelta di Rebecca
 tags:
 - ONE PIECE
+- Luffy
 ---
 
 Oda ci dice ancora una volta che Luffy è sostanzialmente un bambino, una volontà tirannica che non è però volta a trasformare quella altrui in strumento utile per la propria, ma anzi libera entrambe a costo della vita.
