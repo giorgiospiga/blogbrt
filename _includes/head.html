@@ -10,11 +10,11 @@
   <meta property="og:image" content="{% if page.image %}{% if page.image.sourcet %}{{ page.image.sourcet | prepend: site.baseurl }}{% else %}{{ page.image.source | prepend: site.baseurl }}{% endif %}{% else %}{{ site.logo4 | prepend: site.baseurl}}{% endif %}">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">
 <!--  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Lato|Source+Sans+Pro" rel="stylesheet">-->
   {% if page.layout == "post" %}
   <!-- post_image fancybox script -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
   {% endif %}
     <link href="{{ site.baseurl }}/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
 </head>
