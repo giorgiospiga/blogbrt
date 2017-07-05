@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-{% include header-grossa.html %}
+
 <section class="bg-grossa">
   <article id="{{ page.title }}-{{ page.type }}" class="artricetta{% if post.categories %} {{ post.categories }}{% else %}{% endif %}">
     <div class="container-fluid">
       <div class="row ">
-        <div class="col recipe">
+        <div class="col recipe" style="background-image: url({{ site.baseurl }}{{ site.reccoverpath }}{{ page.cover }});">
           <header class="obscured text-center mb-4">
             <h1 class="text-center"><a href="{{ post.url | absolute_url }}">{% if page.title %}{{ page.title }}{% elsif page.meta %}{{ page.meta }}{% elsif page.categories %}{{ page.categories }} {{ page.date | date: "%-d/%-m/%Y" }}{% endif %}</a></h1>
           </header>
@@ -18,7 +18,7 @@ layout: default
           <div class="row justify-content-center">
             <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
               <p>{% if page.meta %}{{ page.meta }}{% endif %}</p>
-              <h2>Ingredienti</h2>
+              <h2 class="text-left text-sm-center">Ingredienti</h2>
               <ul class="ingredientslist">
                 {% for ingrediente in page.ingredienti %}
                 <li>
@@ -28,8 +28,10 @@ layout: default
                 </li>
                 {% endfor %}
               </ul>
-              <h2>Procedimento</h2>
-              {{ content | smartify }}
+              <div class="recipe-directions">
+                <h2 class="text-left text-sm-center">Procedimento</h2>
+                {{ content | smartify }}
+              </div>
             </div>
           </div>
       </section>

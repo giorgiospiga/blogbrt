@@ -65,6 +65,7 @@ timezone:      Europe/Rome
 imgsource: /assets/images/ # Local source
 #imgrsource # Remote, external source
 imgdsource: https://dl.dropboxusercontent.com/u/173133/site/postimgs/
+reccoverpath: /assets/images/recipes/ # recipes images
 
 # Defaults
 
