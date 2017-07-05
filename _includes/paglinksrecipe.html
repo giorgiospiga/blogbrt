@@ -1,0 +1,37 @@
+<!-- Pagination links -->
+
+<nav id="paglinksposts" class="paglinks my-3" aria-label="Page navigation">
+  <h5 class="text-center">Prova altre ricette!</h5>
+  <ul class="pagination pagination-lg justify-content-end">
+{% assign maxRelated = 2 %}
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}
+
+{% for recipes in site.cucina-grossa %}
+
+  {% assign sameTagCount = 0 %}
+  {% assign commonTags = '' %}
+
+  {% for typer in recipes.type %}
+    {% if recipes.url != page.url %}
+      {% if page.type contains typer %}
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+        {% capture tagmarkup %} <span class="label label-default">{{ typer }}</span> {% endcapture %}
+        {% assign commonTags = commonTags | append: tagmarkup %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if sameTagCount >= minCommonTags %}
+    <li class="page-item mr-auto recipe-related">
+    <a class="page-link py-5" href="{{ site.baseurl }}{{ recipes.url }}" tabindex="-1"><h6>{{ recipes.title }}{{ commonTags }}</h6><span><small>{{ recipes.type }}</small></span></a>
+
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+  </li>
+ {% endfor %}
+  </ul>
+</nav>

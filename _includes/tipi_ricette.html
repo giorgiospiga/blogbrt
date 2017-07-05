@@ -6,7 +6,7 @@
     <a href="{{ site.baseurl}}{{ ricetta.url }}">
       <div class="card mb-3">
         <img class="card-img-top" src="http://www.waterloo.co.uk/wp-content/uploads/2012/08/SDFS-LCT-diag1.jpg" alt="Card image cap">
-        <div class="card-block" style="background-color: {% cycle "black", "white", "red" %}">
+        <div class="card-block {% cycle "recblock1", "recblock2" %}">
           <h4 class="card-title">{{ ricetta.title }}</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
