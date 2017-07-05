@@ -3,10 +3,28 @@ article.artricetta {
 
 }
 
+div.recipe-directions {
+  ol, ul {
+    list-style-position: outside;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+
+  }
+  @include media-breakpoint-up(sm) {
+    ol, ul {
+        margin-left: -40px;
+
+    }
+  }
+}
+
 .recipe {
   padding: 21rem 1rem 3rem 1rem;
   background-color: red;
-  background-image: url(http://www.ilmiobebe.it/wp-content/uploads/2015/07/Caprese.jpg);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,12 +34,11 @@ article.artricetta {
 -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,1);
 box-shadow: 0px 2px 3px 0px rgba(0,0,0,1);
 
-@include media-breakpoint-up(sm) {
-  h2 {
-    font-size: $base-font-size*33.5;
+  @include media-breakpoint-up(sm) {
+    h2 {
+      font-size: $base-font-size*33.5;
+    }
   }
-}
-
 }
 
 .obscured {
