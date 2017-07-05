@@ -12,3 +12,8 @@ header.header-grossalist {
 .bg-grossa {
   background-color: $bg-postlist;
 }
+
+a.recipe-card:hover {
+  background-color: $gray-dark;
+  text-decoration: none!important;
+}
