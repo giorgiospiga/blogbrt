@@ -1,7 +1,7 @@
 ---
 layout: cucina-grossa-ricetta
 title: Crema di zucca
-meta:
+meta: "La crema di zucca è una zuppa preparata con polpa di zucca gialla servita con crostini dorati."
 servingtime: 40 min
 servings: 4
 type: primo
