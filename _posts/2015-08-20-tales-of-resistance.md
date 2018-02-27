@@ -1,11 +1,11 @@
 ---
 layout: post
 title: The tales of arrival and resistance
-date: '2015-08-20T15:37:00.000+00:00'
+date: 2015-08-20 15:37:00 +0000
 author: gio
 image:
-  source: 2015-08-20-tales_onepiece.png
-  sourcet: 2015-08-20-tales_onepiece_t.png
+  source: 2015-08-20 00:00:00 +0000
+  sourcet: 2015-08-20 00:00:00 +0000
   alt: La scelta di Rebecca
 tags:
 - ONE PIECE
