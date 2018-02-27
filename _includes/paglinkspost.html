@@ -3,7 +3,7 @@
   <ul class="pagination pagination-lg justify-content-end">
     {% if page.next.url %}
     <li class="page-item">
-      <a class="page-link py-5" href="{{ site.baseurl }}{{ page.next.url }}"><h6><small>&laquo {{ site.nextpost }}</small></h6><span>{{ page.next.title }}</span></a>
+      <a class="page-link py-5" href="{{ site.baseurl }}{{ page.next.url }}"><h6><small>&laquo&nbsp;{{ site.nextpost }}</small></h6><span>{{ page.next.title }}</span></a>
     </li>
     {% else %}
     <li class="page-item disabled">
@@ -11,7 +11,7 @@
     {% endif %}
     {% if page.previous.url %}
     <li class="page-item mr-auto">
-      <a class="page-link py-5" href="{{ site.baseurl }}{{ page.previous.url }}" tabindex="-1"><h6><small>{{ site.prevpost }} &raquo</small></h6><span>{{ page.previous.title }}</span></a>
+      <a class="page-link py-5" href="{{ site.baseurl }}{{ page.previous.url }}" tabindex="-1"><h6><small>{{ site.prevpost }}&nbsp;&raquo</small></h6><span>{{ page.previous.title }}</span></a>
     </li>
     {% else %}
     <li class="page-item disabled mr-auto">
