@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Ce lo chiede Mario
-date: 2014-04-05 07:00:00 +0000
+date: '2014-04-05T07:00:00.000+00:00'
 author: gio
 image:
-  source: 2014-04-05 00:00:00 +0000
-  sourcet: 2014-04-05 00:00:00 +0000
+  source: 2014-04-05-mario_pd.png
+  sourcet: 2014-04-05-mario_pd_t.png
   alt: ce lo chiede mario
 tags:
 - PD
