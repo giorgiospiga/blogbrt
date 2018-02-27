@@ -2,7 +2,6 @@
 layout: post
 title: Selma Lagerlöf - Il viaggio meraviglioso di Nils Holgersson
 description: Meraviglioso davvero
-<<<<<<< HEAD
 date: '2010-01-07 03:22:00 +01:00'
 author: gio
 image:
