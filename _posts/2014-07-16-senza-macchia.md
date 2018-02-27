@@ -2,11 +2,11 @@
 layout: post
 title: Senza macchia
 description: Luigi Gubitosi, direttore generale della RAI, ha chiarito le idee a tutti
-date: '2014-07-16T14:12:00.000+00:00'
+date: 2014-07-16 14:12:00 +0000
 author: gio
 image:
-  source: 2014-07-16-sopranos_silvio_clean.jpg
-  sourcet: 2014-07-16-sopranos_silvio_clean_t.jpg
+  source: 2014-07-16 00:00:00 +0000
+  sourcet: 2014-07-16 00:00:00 +0000
   alt: senza macchia
 tags:
 - RAI

@@ -1,0 +1,50 @@
+---
+pages:
+- _posts/2015-08-20-tales-of-resistance.md
+- _posts/2017-03-11-capriccio.md
+hide_body: false
+fields:
+- name: layout
+  default: post
+  label: Layout
+  type: text
+  hidden: false
+- name: title
+  default: TITOLOPOST
+  label: Title
+  type: text
+  hidden: false
+- name: description
+  type: text
+  label: Description
+- name: date
+  default: 0200-07-16 14:12:00 +0000
+  label: Date
+  type: datetime
+  hidden: false
+- name: author
+  default: gio
+  label: Author
+  type: text
+  hidden: false
+- name: coverimg
+  default: 
+  label: Coverimg
+  type: field_group
+  fields:
+  - name: source
+    default: NOMEIMG.jpg
+    label: Source
+    type: text
+    hidden: false
+  - name: alt
+    default: "\\ALTIMG"
+    label: Alt
+    type: text
+    hidden: false
+  hidden: false
+- name: tags
+  default: TAG
+  label: Tags
+  type: tag_list
+  hidden: false
