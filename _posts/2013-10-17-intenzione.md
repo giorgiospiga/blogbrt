@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intenzione
-date: 2013-10-17 02:07
+date: 2013-10-17 00:00:00 +0000
 author: gio
 ---
 
